@@ -1,0 +1,67 @@
+﻿<Window x:Class="RecipeCookbook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeCookbook"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="800" 
+        Width="1400"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Background -->
+        <Rectangle Fill="LightGoldenrodYellow" 
+                   Stretch="Fill"/>
+
+        <!-- Cover Image -->
+        <Image Source="/Image/Main/foodbg.jpg" 
+               Stretch="UniformToFill" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top"
+               Height="300" 
+               Width="400"/>
+
+        <!-- Title -->
+        <TextBlock Text="Delicious Recipes"
+                   FontSize="36"
+                   FontWeight="Bold"
+                   Foreground="Chocolate"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,320,0,0"/>
+
+        <!-- Subtitle -->
+        <TextBlock Text="A Collection of Favorite Dishes"
+                   FontSize="20"
+                   FontStyle="Italic"
+                   Foreground="DarkOliveGreen"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,380,0,0"/>
+
+        <!-- Author -->
+        <TextBlock Text="by Your Name"
+                   FontSize="16"
+                   FontStyle="Italic"
+                   Foreground="DarkSlateGray"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,440,0,0"/>
+
+        <!-- Decorative Element -->
+        <Button Content="Start"
+                FontSize="18"
+                FontWeight="Bold"
+                Foreground="White"
+                Background="DarkSalmon"
+                Width="100"
+                Height="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,500,0,0"
+                Click="StartButton_Click"/>
+    </Grid>
+
+</Window>

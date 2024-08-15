@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\BannerFood.png" />
+    <None Remove="Image\Bannermenu.jpg" />
+    <None Remove="Image\DashboardWindow\logochefe.png" />
+    <None Remove="Image\Home\fastfoodbanner.jpg" />
+    <None Remove="Image\slidefood.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\DashboardWindow\logochefe.png" />
+    <Resource Include="Image\Dashbord\BannerFood.png" />
+    <Resource Include="Image\Dashbord\Bannermenu.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image\Dashbord\slidefood.png" />
+    <Resource Include="Image\Home\fastfoodbanner.jpg" />
+  </ItemGroup>
+
+</Project>
