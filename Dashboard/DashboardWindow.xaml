@@ -22,7 +22,7 @@
             
             <Button Content="Home" Click="HomeButton_Click"/>
             <Button Content="Country" Click="CountryButton_Click"/>
-            <Button Content="Discount" />
+            <Button Content="Recipe" Click="RecipeButton_Click"/>
             <Button Content="Categories" />
         </StackPanel>
 

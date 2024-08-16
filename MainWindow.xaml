@@ -11,57 +11,60 @@
         ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <!-- Background -->
-        <Rectangle Fill="LightGoldenrodYellow" 
-                   Stretch="Fill"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="129*" />
+            <ColumnDefinition Width="151*" />
+        </Grid.ColumnDefinitions>
 
-        <!-- Cover Image -->
-        <Image Source="/Image/Main/foodbg.jpg" 
-               Stretch="UniformToFill" 
-               HorizontalAlignment="Center" 
-               VerticalAlignment="Top"
-               Height="300" 
-               Width="400"/>
+        <!-- Left Section -->
+        <StackPanel VerticalAlignment="Center" Height="269" HorizontalAlignment="Center" Width="545">
+            <TextBlock Text="Cooking Made Fun and Easy: Unleash Your Inner Chef" 
+                       FontSize="40" 
+                       FontWeight="Bold" 
+                       TextWrapping="Wrap" 
+                       Foreground="Black" />
 
-        <!-- Title -->
-        <TextBlock Text="Delicious Recipes"
-                   FontSize="36"
-                   FontWeight="Bold"
-                   Foreground="Chocolate"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Top"
-                   Margin="0,320,0,0"/>
+            <TextBlock Text="Discover more than 10,000 recipes in your hand with the best recipe. Help you to find the easiest way to cook."
+                       FontSize="20" 
+                       Margin="0,20,0,30" 
+                       Foreground="Gray" 
+                       TextWrapping="Wrap"/>
 
-        <!-- Subtitle -->
-        <TextBlock Text="A Collection of Favorite Dishes"
-                   FontSize="20"
-                   FontStyle="Italic"
-                   Foreground="DarkOliveGreen"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Top"
-                   Margin="0,380,0,0"/>
+            <Button Width="120" Height="50" Background="#FFA500" Foreground="White" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Click="StartButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Button.Content>
+                    <TextBlock Text="Start" Padding="10"/>
+                </Button.Content>
+            </Button>
 
-        <!-- Author -->
-        <TextBlock Text="by Your Name"
-                   FontSize="16"
-                   FontStyle="Italic"
-                   Foreground="DarkSlateGray"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Top"
-                   Margin="0,440,0,0"/>
+        </StackPanel>
 
-        <!-- Decorative Element -->
-        <Button Content="Start"
-                FontSize="18"
-                FontWeight="Bold"
-                Foreground="White"
-                Background="DarkSalmon"
-                Width="100"
-                Height="50"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Margin="0,500,0,0"
-                Click="StartButton_Click"/>
+        <!-- Right Section -->
+        <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Height="700" Width="700">
+            <Image Source="/Image/salad.png" 
+                   Stretch="Uniform" 
+                   Width="700" Height="700" />
+
+            <!-- Decoration Images -->
+            <Image Source="/Image/tomato.png" 
+                   Width="90" Height="90" 
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Top" 
+                   Margin="0,20,50,0" />
+
+            <Image Source="/Image/fresh-red.png" 
+                   Width="90" Height="90" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="50,0,0,20" />
+
+            <!-- Additional small images as needed -->
+        </Grid>
     </Grid>
-
 </Window>

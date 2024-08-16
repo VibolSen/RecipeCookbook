@@ -29,5 +29,11 @@ namespace RecipeCookbook
             // Load DashboardMain UserControl into the MainContentArea
             MainContentArea.Content = new Country();
         }
+
+        private void RecipeButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Load DashboardMain UserControl into the MainContentArea
+            MainContentArea.Content = new Recipe();
+        }
     }
 }
