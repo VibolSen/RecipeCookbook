@@ -11,7 +11,12 @@
   <ItemGroup>
     <None Remove="Image\BannerFood.png" />
     <None Remove="Image\Bannermenu.jpg" />
+    <None Remove="Image\DashboardWindow\Close.png" />
+    <None Remove="Image\DashboardWindow\Country.png" />
+    <None Remove="Image\DashboardWindow\Dashboard.png" />
+    <None Remove="Image\DashboardWindow\Home.png" />
     <None Remove="Image\DashboardWindow\logochefe.png" />
+    <None Remove="Image\DashboardWindow\Recipe.png" />
     <None Remove="Image\Food.png" />
     <None Remove="Image\fresh-red.png" />
     <None Remove="Image\Home\fastfoodbanner.jpg" />
@@ -24,7 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\DashboardWindow\Close.png" />
+    <Resource Include="Image\DashboardWindow\Country.png" />
+    <Resource Include="Image\DashboardWindow\Dashboard.png" />
+    <Resource Include="Image\DashboardWindow\Home.png" />
     <Resource Include="Image\DashboardWindow\logochefe.png" />
+    <Resource Include="Image\DashboardWindow\Recipe.png" />
     <Resource Include="Image\Dashbord\BannerFood.png" />
     <Resource Include="Image\Dashbord\Bannermenu.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

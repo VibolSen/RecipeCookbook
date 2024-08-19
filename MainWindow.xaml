@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RecipeCookbook"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="MainWindow"
+        WindowStyle="None"
         Height="800" 
         Width="1400"
         ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="129*" />
-            <ColumnDefinition Width="151*" />
+            <ColumnDefinition Width="43*" />
+            <ColumnDefinition Width="57*" />
         </Grid.ColumnDefinitions>
 
         <!-- Left Section -->
-        <StackPanel VerticalAlignment="Center" Height="269" HorizontalAlignment="Center" Width="545">
+        <StackPanel VerticalAlignment="Center" Height="269" HorizontalAlignment="Left" Width="546" Grid.ColumnSpan="2" Margin="162,0,0,0">
             <TextBlock Text="Cooking Made Fun and Easy: Unleash Your Inner Chef" 
                        FontSize="40" 
                        FontWeight="Bold" 

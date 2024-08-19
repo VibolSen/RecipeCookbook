@@ -1,6 +1,8 @@
-﻿<UserControl x:Class="RecipeCookbook.Dashboard"
+﻿<UserControl x:Class="RecipeCookbook.Dashboard1"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
              Height="Auto"
              Width="850"
              Background="White">
@@ -9,7 +11,7 @@
 
         <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
             <StackPanel Grid.Column="1" Margin="10">
-                <Grid>
+                <Grid Margin="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -46,16 +48,27 @@
                     </Border>
                 </Grid>
 
-                <Border CornerRadius="10" Margin="10" Width="800" Height="300" HorizontalAlignment="Center">
+                <Border CornerRadius="10" Margin="10,0" Width="800" Height="300" HorizontalAlignment="Center">
                     <Border.Background>
                         <ImageBrush ImageSource="/Image/Dashbord/BannerFood.png" Stretch="UniformToFill"/>
                     </Border.Background>
                 </Border>
 
-                <StackPanel Margin="10">
-                    <TextBlock Text="Deals Of The Day" FontSize="32" FontWeight="Bold" Foreground="#444" Margin="0,0,0,10"/>
+                <StackPanel Margin="5">
 
-                    <UniformGrid Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0">
+                    <Border Background="#F5F7F8" 
+                            BorderBrush="#D1D1D1" 
+                            CornerRadius="10" 
+                            Padding="10" 
+                            Margin="10" Width="797">
+                        <TextBlock Text="Deals Of The Day" 
+                                   FontSize="32" 
+                                   FontWeight="Bold" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Left"/>
+                    </Border>
+
+                    <UniformGrid Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0">
                         <!-- First Item -->
                         <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="10" Margin="10" Width="250" Height="250">
                             <Border.Background>
@@ -86,7 +99,15 @@
                     </Border.Background>
                 </Border>
 
+                <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <TextBlock Text="Best food offers" Margin="10"/>
+                    <TextBlock Text="Easy to take time" Margin="10"/>
+                    <TextBlock Text="Great daily deal" Margin="10"/>
+                    <TextBlock Text="Easy to practice" Margin="10"/>
+                </StackPanel>
+
             </StackPanel>
+            
         </ScrollViewer>
         
     </Grid>

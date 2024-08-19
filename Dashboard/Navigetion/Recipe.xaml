@@ -1,6 +1,8 @@
 ﻿<UserControl x:Class="RecipeCookbook.Recipe"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
              Width="850"
              Background="White">
     <Grid>
@@ -38,27 +40,37 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- First Border with Image -->
-                    <Border CornerRadius="10" Margin="0,0,0,10" Height="200" HorizontalAlignment="Center" Width="405">
+                    <Border CornerRadius="10" Margin="0,0,0,10" Height="200" HorizontalAlignment="Center" Width="385">
                         <Border.Background>
                             <ImageBrush ImageSource="D:\1_STEP Acadermy\Project\WinForm(WPF)\RecipeCookbook\Image\Home\slide1.png"/>
                         </Border.Background>
                     </Border>
 
                     <!-- Second Border with Image -->
-                    <Border CornerRadius="10" Margin="0,0,0,10" Height="200" Grid.Column="2" HorizontalAlignment="Center" Width="405">
+                    <Border CornerRadius="10" Margin="0,0,0,10" Height="200" Grid.Column="2" HorizontalAlignment="Center" Width="385">
                         <Border.Background>
                             <ImageBrush ImageSource="D:\1_STEP Acadermy\Project\WinForm(WPF)\RecipeCookbook\Image\Home\slide2.png"/>
                         </Border.Background>
                     </Border>
                 </Grid>
 
-                <StackPanel Grid.Row="3" Margin="10">
+                <StackPanel Grid.Row="3" Margin="10,0,10,10">
 
-                    <TextBlock Text="All Recipe" FontSize="20" FontWeight="Bold" Margin="10"/>
+                    <Border Background="#F5F7F8" 
+                             BorderBrush="#D1D1D1" 
+                             CornerRadius="10" 
+                             Padding="10" 
+                             Margin="10">
+                        <TextBlock Text="All Recipe" 
+                                    FontSize="25" 
+                                    FontWeight="Bold" 
+                                    VerticalAlignment="Center" 
+                                    HorizontalAlignment="Left"/>
+                    </Border>
 
                     <WrapPanel>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0" Click="KhmerNodle_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}"
@@ -592,7 +604,18 @@
                     </ScrollViewer>
 
                     <StackPanel Margin="10">
-                        <TextBlock Text="Deals Of The Day" FontSize="32" FontWeight="Bold" Foreground="#444" Margin="0,0,0,10"/>
+
+                        <Border Background="#F5F7F8" 
+                                 BorderBrush="#D1D1D1" 
+                                 CornerRadius="10" 
+                                 Padding="10" 
+                                 Margin="10">
+                            <TextBlock Text="Deals Of The Day" 
+                                        FontSize="27" 
+                                        FontWeight="Bold" 
+                                        VerticalAlignment="Center" 
+                                        HorizontalAlignment="Left"/>
+                        </Border>
 
                         <UniformGrid Columns="3" HorizontalAlignment="Center" VerticalAlignment="Top">
                             <!-- First Item -->
@@ -887,7 +910,7 @@
                         <!-- Repeat Border for other products -->
                     </WrapPanel>
 
-                    <Border CornerRadius="10" Margin="10" Width="800" Height="150" HorizontalAlignment="Center">
+                    <Border CornerRadius="10" Margin="10" Width="810" Height="150" HorizontalAlignment="Center">
                         <Border.Background>
                             <ImageBrush ImageSource="/Image/Recipe/footerRecipe.png" Stretch="UniformToFill"/>
                         </Border.Background>

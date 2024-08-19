@@ -2,9 +2,9 @@
 
 namespace RecipeCookbook
 {
-    public partial class Dashboard : UserControl
+    public partial class Dashboard1 : UserControl
     {
-        public Dashboard()
+        public Dashboard1()
         {
             InitializeComponent();
         }

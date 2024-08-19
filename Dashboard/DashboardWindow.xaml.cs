@@ -9,13 +9,13 @@ namespace RecipeCookbook
         public DashboardWindow()
         {
             InitializeComponent();
-            MainContentArea.Content = new Dashboard();
+            MainContentArea.Content = new Dashboard1();
         }
 
         private void DashboardButton_Click(object sender, RoutedEventArgs e)
         {
             // Load DashboardMain UserControl into the MainContentArea
-            MainContentArea.Content = new Dashboard();
+            MainContentArea.Content = new Dashboard1();
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -34,6 +34,12 @@ namespace RecipeCookbook
         {
             // Load DashboardMain UserControl into the MainContentArea
             MainContentArea.Content = new Recipe();
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Close the current window
+            this.Close();
         }
     }
 }

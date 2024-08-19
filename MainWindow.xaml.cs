@@ -24,8 +24,9 @@ namespace RecipeCookbook
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
             // Create an instance of the Dashboard window
-            RecipeCookbook.DashboardWindow dashboardWindow = new RecipeCookbook.DashboardWindow();            // Show the Dashboard window
+            RecipeCookbook.DashboardWindow dashboardWindow = new RecipeCookbook.DashboardWindow();            
             dashboardWindow.Show();
+            this.Close();
         }
 
 
