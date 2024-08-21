@@ -17,6 +17,13 @@
     <None Remove="Image\DashboardWindow\Home.png" />
     <None Remove="Image\DashboardWindow\logochefe.png" />
     <None Remove="Image\DashboardWindow\Recipe.png" />
+    <None Remove="Image\Dashbord\allFood.jpg" />
+    <None Remove="Image\Dashbord\allFood1.jpeg" />
+    <None Remove="Image\Dashbord\khmer.jpeg" />
+    <None Remove="Image\Dashbord\khmer1.jpg" />
+    <None Remove="Image\Dashbord\khmer2.jpg" />
+    <None Remove="Image\Dashbord\khmer3.jpg" />
+    <None Remove="Image\Dashbord\slide1.jpg" />
     <None Remove="Image\Food.png" />
     <None Remove="Image\fresh-red.png" />
     <None Remove="Image\Home\fastfoodbanner.jpg" />
@@ -35,10 +42,17 @@
     <Resource Include="Image\DashboardWindow\Home.png" />
     <Resource Include="Image\DashboardWindow\logochefe.png" />
     <Resource Include="Image\DashboardWindow\Recipe.png" />
+    <Resource Include="Image\Dashbord\allFood.jpg" />
+    <Resource Include="Image\Dashbord\allFood1.jpeg" />
     <Resource Include="Image\Dashbord\BannerFood.png" />
     <Resource Include="Image\Dashbord\Bannermenu.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Image\Dashbord\khmer.jpeg" />
+    <Resource Include="Image\Dashbord\khmer1.jpg" />
+    <Resource Include="Image\Dashbord\khmer2.jpg" />
+    <Resource Include="Image\Dashbord\khmer3.jpg" />
+    <Resource Include="Image\Dashbord\slide1.jpg" />
     <Resource Include="Image\Dashbord\slidefood.png" />
     <Resource Include="Image\Food.png" />
     <Resource Include="Image\fresh-red.png" />

@@ -101,7 +101,7 @@
                             </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
                                     <Border Background="{TemplateBinding Background}"

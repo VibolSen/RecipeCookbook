@@ -22,5 +22,16 @@ namespace RecipeCookbook
                 parentWindow.MainContentArea.Content = khmernodle;
             }
         }
+
+        private void Somlorkorkor_Click(object sender, RoutedEventArgs e)
+        {
+            var somlorkorkor = new Somlorkorkor();
+            var parentWindow = Window.GetWindow(this) as DashboardWindow;
+
+            if (parentWindow != null)
+            {
+                parentWindow.MainContentArea.Content = somlorkorkor;
+            }
+        }
     }
 }
