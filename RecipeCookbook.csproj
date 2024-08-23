@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Image\BannerFood.png" />
     <None Remove="Image\Bannermenu.jpg" />
+    <None Remove="Image\Country\404.png" />
     <None Remove="Image\DashboardWindow\Close.png" />
     <None Remove="Image\DashboardWindow\Country.png" />
     <None Remove="Image\DashboardWindow\Dashboard.png" />
@@ -26,16 +27,37 @@
     <None Remove="Image\Dashbord\slide1.jpg" />
     <None Remove="Image\Food.png" />
     <None Remove="Image\fresh-red.png" />
+    <None Remove="Image\Home\broccoli.png" />
+    <None Remove="Image\Home\bunch-broccoli.png" />
+    <None Remove="Image\Home\bunch-green.png" />
+    <None Remove="Image\Home\chinese.png" />
     <None Remove="Image\Home\fastfoodbanner.jpg" />
     <None Remove="Image\Home\footer.png" />
+    <None Remove="Image\Home\fresh-bok.png" />
+    <None Remove="Image\Home\fresh-red.png" />
+    <None Remove="Image\Home\iceberg.png" />
+    <None Remove="Image\Home\khmer-spices.png" />
     <None Remove="Image\Home\kuyteav.png" />
+    <None Remove="Image\Home\tomato.png" />
+    <None Remove="Image\numpjuk.jpg" />
+    <None Remove="Image\Recipe\amok.jpg" />
+    <None Remove="Image\Recipe\bay-cha.jpg" />
+    <None Remove="Image\Recipe\crab-stir-fried.jpg" />
     <None Remove="Image\Recipe\footerRecipe.png" />
+    <None Remove="Image\Recipe\green-curry.jpg" />
+    <None Remove="Image\Recipe\khmer-noodles.png" />
+    <None Remove="Image\Recipe\mju kroung.jpg" />
+    <None Remove="Image\Recipe\samlorkorkor.jpg" />
+    <None Remove="Image\Recipe\slide01.png" />
+    <None Remove="Image\Recipe\slide02.png" />
+    <None Remove="Image\Recipe\sweet-pork.jpg" />
     <None Remove="Image\salad.png" />
     <None Remove="Image\slidefood.png" />
     <None Remove="Image\tomato.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\Country\404.png" />
     <Resource Include="Image\DashboardWindow\Close.png" />
     <Resource Include="Image\DashboardWindow\Country.png" />
     <Resource Include="Image\DashboardWindow\Dashboard.png" />
@@ -56,10 +78,30 @@
     <Resource Include="Image\Dashbord\slidefood.png" />
     <Resource Include="Image\Food.png" />
     <Resource Include="Image\fresh-red.png" />
+    <Resource Include="Image\Home\broccoli.png" />
+    <Resource Include="Image\Home\bunch-broccoli.png" />
+    <Resource Include="Image\Home\bunch-green.png" />
+    <Resource Include="Image\Home\chinese.png" />
     <Resource Include="Image\Home\fastfoodbanner.jpg" />
     <Resource Include="Image\Home\footer.png" />
+    <Resource Include="Image\Home\fresh-bok.png" />
+    <Resource Include="Image\Home\fresh-red.png" />
+    <Resource Include="Image\Home\iceberg.png" />
+    <Resource Include="Image\Home\khmer-spices.png" />
     <Resource Include="Image\Home\kuyteav.png" />
+    <Resource Include="Image\Home\tomato.png" />
+    <Resource Include="Image\numpjuk.jpg" />
+    <Resource Include="Image\Recipe\amok.jpg" />
+    <Resource Include="Image\Recipe\bay-cha.jpg" />
+    <Resource Include="Image\Recipe\crab-stir-fried.jpg" />
     <Resource Include="Image\Recipe\footerRecipe.png" />
+    <Resource Include="Image\Recipe\green-curry.jpg" />
+    <Resource Include="Image\Recipe\khmer-noodles.png" />
+    <Resource Include="Image\Recipe\mju kroung.jpg" />
+    <Resource Include="Image\Recipe\samlorkorkor.jpg" />
+    <Resource Include="Image\Recipe\slide01.png" />
+    <Resource Include="Image\Recipe\slide02.png" />
+    <Resource Include="Image\Recipe\sweet-pork.jpg" />
     <Resource Include="Image\salad.png" />
     <Resource Include="Image\tomato.png" />
   </ItemGroup>

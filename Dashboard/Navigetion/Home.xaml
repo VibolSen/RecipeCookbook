@@ -45,8 +45,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -62,8 +61,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/tomato.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -79,8 +77,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/broccoli.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -96,8 +93,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/bunch-green.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -113,8 +109,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/chinese.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -130,8 +125,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/fresh-bok.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -147,8 +141,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/iceberg.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -164,8 +157,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
+                                <Image Source="/Image/Home/khmer-spices.png" Width="100" Height="100"/>
                             </StackPanel>
                         </Button>
 
@@ -181,7 +173,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                             <StackPanel>
-                                <Image Source="/Image/kuyteav.png" Width="50" Height="50"/>
+                                <Image Source="/Image/Home/bunch-broccoli.png" Width="100" Height="100"/>
                                 <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
                             </StackPanel>
                         </Button>
@@ -214,7 +206,7 @@
 
 
                 <!-- Product Sections -->
-                <StackPanel Grid.Row="3" Margin="10">
+                <StackPanel Grid.Row="2" Margin="10,240,10,10" Grid.RowSpan="2">
 
                     <Border Background="#F5F7F8" 
                             BorderBrush="#D1D1D1" 

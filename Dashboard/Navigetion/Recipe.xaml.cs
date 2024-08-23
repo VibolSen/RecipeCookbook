@@ -12,14 +12,14 @@ namespace RecipeCookbook
             InitializeComponent();
         }
 
-        private void KhmerNodle_Click(object sender, RoutedEventArgs e)
+        private void KhmerNoodle_Click(object sender, RoutedEventArgs e)
         {
-            var khmernodle = new KhmerNodle();
+            var khmernoodle = new KhmerNodle();
             var parentWindow = Window.GetWindow(this) as DashboardWindow;
 
             if (parentWindow != null)
             {
-                parentWindow.MainContentArea.Content = khmernodle;
+                parentWindow.MainContentArea.Content = khmernoodle;
             }
         }
 

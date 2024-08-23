@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="RecipeCookbook.Dashboard.BookMenu.KhmerNodle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:RecipeCookbook.Dashboard.BookMenu"
+             mc:Ignorable="d"
+             Width="850"
+             Background="White">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Back Button -->
+                <Button Background="Transparent" 
+                        BorderThickness="0"
+                        Padding="10" 
+                        Margin="0,10,700,10"
+                        Grid.Row="0"
+                        Click="BackButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <!-- Back Icon -->
+                        <TextBlock Text="←" 
+                                   FontSize="25" 
+                                   VerticalAlignment="Center" 
+                                   Margin="0,0,10,0"/>
+
+                        <!-- Button Text -->
+                        <TextBlock Text="Back" 
+                                   FontSize="20" 
+                                   FontWeight="Bold" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Left"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Image Section -->
+                <Border CornerRadius="10" 
+                        Margin="0,0,0,20" 
+                        Width="800" 
+                        Height="300" 
+                        HorizontalAlignment="Center" 
+                        Grid.Row="1">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Image/numpjuk.jpg" Stretch="UniformToFill"/>
+                    </Border.Background>
+                </Border>
+
+                <!-- Recipe Title -->
+                <TextBlock Text="Nom Banh Chok (Khmer Nodle)" 
+                           FontSize="30" 
+                           FontWeight="Bold" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center" 
+                           Margin="10,0,0,20" 
+                           Foreground="#333"
+                           Grid.Row="2"/>
+
+                <!-- Ingredients Section -->
+                <StackPanel Orientation="Vertical"
+                            Grid.Row="3"
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Top" 
+                            Margin="0,0,0,20"
+                            Width="500">
+
+                    <TextBlock Text="Ingredients:" 
+                               FontSize="24" 
+                               FontWeight="Bold" 
+                               Foreground="#444" 
+                               Margin="0,0,0,10"/>
+
+                    <TextBlock Text="• 1 lb (450g) fish fillets (such as catfish or tilapia)" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 1 onion, halved" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 3 cloves garlic" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 2 inches ginger, sliced" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 2 star anise" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 1 cinnamon stick" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 2 cloves" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 1 tablespoon sugar" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 2 tablespoons fish sauce" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• Salt, to taste" FontSize="18" Margin="0,5"/>
+                    <TextBlock Text="• 3-4 liters (quarts) water" FontSize="18" Margin="0,5"/>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
