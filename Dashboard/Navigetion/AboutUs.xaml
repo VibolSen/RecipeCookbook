@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="RecipeCookbook.AboutUs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="800"
+             Width="850"
+             Background="White">
+    <Grid>
+
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Content Area -->
+                <Grid Grid.Row="1" Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Main Heading -->
+                    <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,20">
+                        <TextBlock Text="The dream team of" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock Text="digital marketing." FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock Text="We Grow Businesses Online. Period." FontSize="16" HorizontalAlignment="Center"/>
+                    </StackPanel>
+
+                    <!-- Services Section -->
+                    <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Service 1 -->
+                        <Border BorderBrush="#D0D7E5" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10">
+                            <StackPanel Width="200">
+                                <Image Source="/Image/AboutUs/Profile.jpg" Height="100" Margin="0,0,0,10"/>
+                                <TextBlock Text="01" FontSize="20" FontWeight="Bold" Foreground="#8D98A4"/>
+                                <TextBlock Text="Custom SEO Services" FontSize="16" FontWeight="Bold" Margin="0,10,0,5"/>
+                                <TextBlock Text="Custom, organic SEO services that include technical audits, on-page search engine optimization." TextWrapping="Wrap" Foreground="#8D98A4"/>
+                                <Button Content="Ahmad Subari" Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Service 2 -->
+                        <Border BorderBrush="#D0D7E5" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10" Grid.Column="1">
+                            <StackPanel Width="200">
+                                <Image Source="/Image/AboutUs/Profile.jpg" Height="100" Margin="0,0,0,10"/>
+                                <TextBlock Text="02" FontSize="20" FontWeight="Bold" Foreground="#8D98A4"/>
+                                <TextBlock Text="SEO Website Design" FontSize="16" FontWeight="Bold" Margin="0,10,0,5"/>
+                                <TextBlock Text="1st on the List provides highly effective PPC advertising for every budget including Google PPC Ads, Bing PPC, and ad retargeting." TextWrapping="Wrap" Foreground="#8D98A4"/>
+                                <Button Content="Andrew Slabus" Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Service 3 -->
+                        <Border BorderBrush="#D0D7E5" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10" Grid.Column="2">
+                            <StackPanel Width="200">
+                                <Image Source="/Image/AboutUs/Profile.jpg" Height="100" Margin="0,0,0,10"/>
+                                <TextBlock Text="03" FontSize="20" FontWeight="Bold" Foreground="#8D98A4"/>
+                                <TextBlock Text="SEO Consulting" FontSize="16" FontWeight="Bold" Margin="0,10,0,5"/>
+                                <TextBlock Text="B2B SEO is the process of generating valuable inbound leads from other businesses." TextWrapping="Wrap" Foreground="#8D98A4"/>
+                                <Button Content="Zahra Agustin" Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+        </ScrollViewer>
+        
+    </Grid>
+</UserControl>

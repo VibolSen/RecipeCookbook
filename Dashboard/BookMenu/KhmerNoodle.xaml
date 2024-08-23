@@ -26,13 +26,10 @@
                         Grid.Row="0"
                         Click="BackButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <!-- Back Icon -->
                         <TextBlock Text="←" 
                                    FontSize="25" 
                                    VerticalAlignment="Center" 
                                    Margin="0,0,10,0"/>
-
-                        <!-- Button Text -->
                         <TextBlock Text="Back" 
                                    FontSize="20" 
                                    FontWeight="Bold" 
@@ -64,30 +61,83 @@
                            Grid.Row="2"/>
 
                 <!-- Ingredients Section -->
-                <StackPanel Orientation="Vertical"
-                            Grid.Row="3"
+                <StackPanel Orientation="Vertical" 
                             HorizontalAlignment="Left" 
-                            VerticalAlignment="Top" 
-                            Margin="0,0,0,20"
-                            Width="500">
-
+                            VerticalAlignment="Top"
+                            Grid.Row="3"
+                            Margin="20,0,0,0" Width="543">
                     <TextBlock Text="Ingredients:" 
-                               FontSize="24" 
+                               FontSize="20" 
                                FontWeight="Bold" 
-                               Foreground="#444" 
-                               Margin="0,0,0,10"/>
+                               Foreground="Black"/>
 
-                    <TextBlock Text="• 1 lb (450g) fish fillets (such as catfish or tilapia)" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 1 onion, halved" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 3 cloves garlic" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 2 inches ginger, sliced" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 2 star anise" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 1 cinnamon stick" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 2 cloves" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 1 tablespoon sugar" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 2 tablespoons fish sauce" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• Salt, to taste" FontSize="18" Margin="0,5"/>
-                    <TextBlock Text="• 3-4 liters (quarts) water" FontSize="18" Margin="0,5"/>
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                        <TextBlock.Inlines>
+                            <Run Text="  "/>
+                            <Run Text="Green Fish Curry Sauce:" TextDecorations="Underline"/>
+                        </TextBlock.Inlines>
+                    </TextBlock>
+                    <TextBlock Text="• 1 lb (450g) fish fillets (such as catfish or tilapia) "/>
+                    <TextBlock Text="• 1 tablespoon turmeric powder or fresh turmeric, grated "/>
+                    <TextBlock Text="• 1 tablespoon lemongrass, finely chopped "/>
+                    <TextBlock Text="• 1 tablespoon galangal, finely chopped  "/>
+                    <TextBlock Text="• 2-3 kaffir lime leaves, finely chopped  "/>
+                    <TextBlock Text="• 3 cloves garlic "/>
+                    <TextBlock Text="• 2 shallots "/>
+                    <TextBlock Text="• 1 tablespoon fish sauce "/>
+                    <TextBlock Text="• 1 teaspoon sugar "/>
+                    <TextBlock Text="• 1 can (400ml) coconut milk "/>
+                    <TextBlock Text="• Salt, to taste "/>
+                    <TextBlock Text="• 2-3 cups water "/>
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                        <TextBlock.Inlines>
+                            <Run Text="  "/>
+                            <Run Text="Noodles and Vegetables: " TextDecorations="Underline"/>
+                        </TextBlock.Inlines>
+                    </TextBlock>
+                    <TextBlock Text="• 500g (1.1 lbs) fresh rice noodles (or dried rice noodles, prepared according to package instructions)  "/>
+                    <TextBlock Text="• Bean sprouts "/>
+                    <TextBlock Text="• Cucumber, julienned "/>
+                    <TextBlock Text="• Green beans, blanched "/>
+                    <TextBlock Text="• Banana blossom, thinly sliced (optional) "/>
+                    <TextBlock Text="• Fresh herbs (mint, basil, cilantro) "/>
+                    <TextBlock Text="• Lime wedges  "/>
+                </StackPanel>
+
+                <!-- Preparation Method Section -->
+                <StackPanel Orientation="Vertical" Margin="20,0,0,0" Height="Auto" Grid.Row="4">
+                    <TextBlock Text="Preparation Method:" 
+                               FontSize="20" 
+                               FontWeight="Bold" 
+                               Foreground="Black"/>
+                    <TextBlock Text="Prepare the Fish:" 
+                               TextDecorations="Underline" 
+                               Foreground="DeepPink" 
+                               FontWeight="Bold"/>
+                    <TextBlock Text="• Poach the fish fillets in a pot of boiling water until fully cooked, then remove and set aside."/>
+                    <TextBlock Text="• Reserve the cooking water to use as fish stock."/>
+                    <TextBlock Text="Make the Curry Paste:" 
+                               TextDecorations="Underline" 
+                               Foreground="DeepPink" 
+                               FontWeight="Bold"/>
+                    <TextBlock Text="• In a mortar and pestle or food processor, combine turmeric, lemongrass, galangal, kaffir lime leaves, garlic, and shallots. Pound or blend until a smooth paste forms."/>
+                    <TextBlock Text="Cook the Curry Sauce:" 
+                               TextDecorations="Underline" 
+                               Foreground="DeepPink" 
+                               FontWeight="Bold"/>
+                    <TextBlock Text="• In a large pot, heat a small amount of oil over medium heat. Add the curry paste and cook until fragrant."/>
+                    <TextBlock Text="• Add the coconut milk, fish sauce, sugar, and salt. Stir well to combine."/>
+                    <TextBlock Text="• Add the cooked fish fillets and break them up into smaller pieces."/>
+                    <TextBlock Text="• Pour in the reserved fish stock and additional water as needed to achieve your desired consistency."/>
+                    <TextBlock Text="• Simmer the sauce for about 15-20 minutes to allow the flavors to meld together."/>
+                    <TextBlock Text="• Simmer the sauce for about 15-20 minutes to allow the flavors to meld."/>
+                    <TextBlock Text="Prepare the Noodles:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                    <TextBlock Text="• If using dried rice noodles, prepare according to package instructions and drain."/>
+                    <TextBlock Text="Assemble the Dish:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                    <TextBlock Text="• Place a portion of rice noodles in a serving bowl."/>
+                    <TextBlock Text="• Ladle the hot green fish curry sauce over the noodles."/>
+                    <TextBlock Text="• Top with bean sprouts, julienned cucumber, blanched green beans, banana blossom, and fresh herbs."/>
+                    <TextBlock Text="• Serve with lime wedges on the side for squeezing over the dish."/>
                 </StackPanel>
             </Grid>
         </ScrollViewer>

@@ -153,6 +153,39 @@
                 </Button.Template>
             </Button>
 
+            <Button Width="200" Height="40" Margin="0" Click="AboutUsButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="2" Background="Transparent">
+                            <Grid>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <!-- Logo -->
+                                    <Image Source="/Image/DashboardWindow/Recipe.png" Width="30" Height="30" Margin="25,0,10,0" RenderTransformOrigin="0.5,0.5">
+                                        <Image.RenderTransform>
+                                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        </Image.RenderTransform>
+                                    </Image>
+
+                                    <!-- Text -->
+                                    <TextBlock Text="About Us" FontSize="20" FontWeight="Bold" Foreground="#0000FF" VerticalAlignment="Center" Width="102"/>
+                                </StackPanel>
+
+                                <!-- Background fill when mouse down -->
+                                <Border x:Name="BackgroundBorder" Background="#0000FF" Opacity="0" CornerRadius="10"/>
+                            </Grid>
+                        </Border>
+
+                        <!-- Trigger for MouseDown -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BackgroundBorder" Property="Opacity" Value="0.1"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
         </StackPanel>
 
         <!-- Main Content Area -->

@@ -36,6 +36,12 @@ namespace RecipeCookbook
             MainContentArea.Content = new Recipe();
         }
 
+        private void AboutUsButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Load DashboardMain UserControl into the MainContentArea
+            MainContentArea.Content = new AboutUs();
+        }
+
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             // Close the current window
