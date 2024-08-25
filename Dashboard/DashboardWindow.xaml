@@ -195,25 +195,53 @@
 
         <!-- Analytics Section -->
         <StackPanel Grid.Column="2" Background="#F5F7F8">
+            
             <Button Width="40" Height="40" Margin="10" Background="Transparent" BorderBrush="Transparent" Click="CloseButton_Click" HorizontalAlignment="Right">
                 <Image Source="/Image/DashboardWindow/Close.png" Width="30" Height="30"/>
             </Button>
 
-            
-                <Border Background="#4A4E69" CornerRadius="10" Padding="10" Margin="5" Width="247">
-                    <StackPanel>
-                        <TextBlock Text="Analytics" Foreground="White" FontSize="18" FontWeight="Bold"/>
-                        <TextBlock Text="Customers" Foreground="White" FontSize="14" Margin="5"/>
-                        <TextBlock Text="315k" Foreground="White" FontSize="24" FontWeight="Bold"/>
-                    </StackPanel>
-                </Border>
-                <Border Background="#4A4E69" CornerRadius="10" Padding="10" Margin="5" Width="247">
-                    <StackPanel>
-                        <TextBlock Text="Delivered" Foreground="White" FontSize="14" Margin="5"/>
-                        <TextBlock Text="159k" Foreground="White" FontSize="24" FontWeight="Bold"/>
-                    </StackPanel>
-                </Border>
-           
+
+            <Button Width="150"
+                    Height="50"
+                    Padding="10"
+                    Margin="5"
+                    Background="#4A4E69"
+                    Foreground="White"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Click="OpenFileButton_Click"
+                    BorderBrush="{x:Null}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <!-- Icon -->
+                    <Image Source="/Image/DashboardWindow/Home.png" Width="24" Height="24" Margin="0,0,10,0"/>
+
+                    <!-- Text -->
+                    <TextBlock Text="Word" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+
+            <Button Background="#4A4E69" 
+                    Padding="10" 
+                    Margin="5" 
+                    Width="150"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Content="Open Text File"
+                    Click="OpenTextFileButton_Click"
+                    BorderBrush="{x:Null}"/>
+
+            <Button Content="Save" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Name="dropdownButton" Click="DropdownButton_Click">
+                <Button.ContextMenu>
+                    <ContextMenu Name="contextMenu">
+                        <MenuItem Header="Save as Text File" Click="SaveAsTextFile_Click" />
+                        <MenuItem Header="Save as Word File" Click="SaveAsWordFile_Click" />
+                        <MenuItem Header="Save as Excel File" Click="SaveAsExcelFile_Click" />
+                    </ContextMenu>
+                </Button.ContextMenu>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

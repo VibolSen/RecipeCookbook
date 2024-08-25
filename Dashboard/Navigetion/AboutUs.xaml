@@ -1,7 +1,6 @@
 ﻿<UserControl x:Class="RecipeCookbook.AboutUs"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             Height="800"
              Width="850"
              Background="White">
     <Grid>
@@ -18,18 +17,91 @@
                 <Grid Grid.Row="1" Margin="20">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
                     <!-- Main Heading -->
                     <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,20">
-                        <TextBlock Text="The dream team of" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
-                        <TextBlock Text="digital marketing." FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
-                        <TextBlock Text="We Grow Businesses Online. Period." FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="About Us" FontSize="60" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Software Development" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock Text="FT SD M14" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
 
+                    <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,10" Width="Auto">
+                        <TextBlock Text="Our team is a team of energetic professionals united by a shared passion for innovation and excellence. Each member brings a unique skill and experience that contributes to a collaborative environment where creativity and skills grow. We are committed to continuing our education and growth by ensuring that we are at the forefront of our expertise. Whether it is solving complex challenges, designing sophisticated solutions or providing specialized services, our team works together with a common goal. Central to our success is a strong sense of teamwork and mutual respect that motivates us to deliver good results and build lasting relationships with each other." 
+                                   FontSize="18" 
+                                   FontWeight="DemiBold" 
+                                   HorizontalAlignment="Center"
+                                   TextWrapping="Wrap"
+                                   MaxWidth="600"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" HorizontalAlignment="Center" Margin="0,20">
+                        <TextBlock Text="Our Team" FontSize="60" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+
+
                     <!-- Services Section -->
-                    <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Service 1 -->
+                        <Border BorderThickness="0" Background="#F5F7F8" Width="300" CornerRadius="20" Padding="20" Margin="20">
+                            <StackPanel >
+                                <!-- Profile Image -->
+                                <Border Width="155" Height="155" CornerRadius="75" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FFD700" BorderThickness="2">
+                                    <Image Source="/Image/AboutUs/Luke.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Image.Clip>
+                                            <EllipseGeometry RadiusX="74" RadiusY="74" Center="75,75" />
+                                        </Image.Clip>
+                                    </Image>
+                                </Border>
+
+                                <!-- Name and Title -->
+                                <TextBlock Text="JamesHenrikTongs Luke" FontSize="20" FontWeight="Bold" Foreground="#2D2D70" TextAlignment="Center" Margin="10,20,10,0"/>
+                                <TextBlock Text="Adviser" FontSize="16" Foreground="#A5A5A5" TextAlignment="Center" Margin="0,5,0,20"/>
+
+                                <!-- Description -->
+                                <TextBlock Text="Luke Tongs is a Senior Software Engineer who plays a crucial role in resolving issues in our code and ensuring that our program processes run smoothly and effectively."
+                                           FontSize="12" Foreground="#758694" TextAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,20"/>
+
+                                <!-- Email -->
+                                <Button Content="luketongs@hotmail.com" FontSize="14" Foreground="White" Background="#5252AC" BorderBrush="Transparent" 
+                                        Padding="10" HorizontalAlignment="Center" Cursor="Hand"/>
+
+                                <!-- Social Icons -->
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/linkedin.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/telegram.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/git.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/ig.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/X.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/facebook.png" Stretch="Uniform"/>
+                                    </Button>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                    </Grid>
+                    <Grid Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Top">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
@@ -37,39 +109,118 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- Service 1 -->
-                        <Border BorderBrush="#D0D7E5" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10">
-                            <StackPanel Width="200">
-                                <Image Source="/Image/AboutUs/Profile.jpg" Height="100" Margin="0,0,0,10"/>
-                                <TextBlock Text="01" FontSize="20" FontWeight="Bold" Foreground="#8D98A4"/>
-                                <TextBlock Text="Custom SEO Services" FontSize="16" FontWeight="Bold" Margin="0,10,0,5"/>
-                                <TextBlock Text="Custom, organic SEO services that include technical audits, on-page search engine optimization." TextWrapping="Wrap" Foreground="#8D98A4"/>
-                                <Button Content="Ahmad Subari" Margin="0,10,0,0"/>
+                        <Border Grid.Column="0" Background="#F5F7F8" Width="300" CornerRadius="20" Padding="20" Margin="20">
+                            <StackPanel>
+                                <!-- Profile Image -->
+                                <Border Width="155" Height="155" CornerRadius="75" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FFD700" BorderThickness="2">
+                                    <Image Source="/Image/AboutUs/Profile facebooks.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Image.Clip>
+                                            <EllipseGeometry RadiusX="74" RadiusY="74" Center="75,75" />
+                                        </Image.Clip>
+                                    </Image>
+                                </Border>
+
+                                <!-- Name and Title -->
+                                <TextBlock Text="SEN Vibol" FontSize="20" FontWeight="Bold" Foreground="#2D2D70" TextAlignment="Center" Margin="10,20,10,0"/>
+                                <TextBlock Text="Team" FontSize="16" Foreground="#A5A5A5" TextAlignment="Center" Margin="0,5,0,20"/>
+
+                                <!-- Description -->
+                                <TextBlock Text="A kiddo who uses Bootstrap and Laravel in web development. Currently playing around with design via Figma"
+                                           FontSize="14" Foreground="#D1D1E0" TextAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,20"/>
+
+                                <!-- Email -->
+                                <Button Content="vibolsen2002@gmail.com" FontSize="14" Foreground="White" Background="#5252AC" BorderBrush="Transparent" 
+                                        Padding="10" HorizontalAlignment="Center" Cursor="Hand"/>
+
+                                <!-- Social Icons -->
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/linkedin.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/telegram.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/git.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/ig.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/X.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/facebook.png" Stretch="Uniform"/>
+                                    </Button>
+                                </StackPanel>
                             </StackPanel>
                         </Border>
 
                         <!-- Service 2 -->
-                        <Border BorderBrush="#D0D7E5" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10" Grid.Column="1">
-                            <StackPanel Width="200">
-                                <Image Source="/Image/AboutUs/Profile.jpg" Height="100" Margin="0,0,0,10"/>
-                                <TextBlock Text="02" FontSize="20" FontWeight="Bold" Foreground="#8D98A4"/>
-                                <TextBlock Text="SEO Website Design" FontSize="16" FontWeight="Bold" Margin="0,10,0,5"/>
-                                <TextBlock Text="1st on the List provides highly effective PPC advertising for every budget including Google PPC Ads, Bing PPC, and ad retargeting." TextWrapping="Wrap" Foreground="#8D98A4"/>
-                                <Button Content="Andrew Slabus" Margin="0,10,0,0"/>
-                            </StackPanel>
-                        </Border>
+                        
 
                         <!-- Service 3 -->
-                        <Border BorderBrush="#D0D7E5" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10" Grid.Column="2">
-                            <StackPanel Width="200">
-                                <Image Source="/Image/AboutUs/Profile.jpg" Height="100" Margin="0,0,0,10"/>
-                                <TextBlock Text="03" FontSize="20" FontWeight="Bold" Foreground="#8D98A4"/>
-                                <TextBlock Text="SEO Consulting" FontSize="16" FontWeight="Bold" Margin="0,10,0,5"/>
-                                <TextBlock Text="B2B SEO is the process of generating valuable inbound leads from other businesses." TextWrapping="Wrap" Foreground="#8D98A4"/>
-                                <Button Content="Zahra Agustin" Margin="0,10,0,0"/>
+                        <Border Grid.Column="1" Background="#F5F7F8" Width="300" CornerRadius="20" Padding="20" Margin="20">
+                            <StackPanel>
+                                <!-- Profile Image -->
+                                <Border Width="155" Height="155" CornerRadius="75" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FFD700" BorderThickness="2">
+                                    <Image Source="/Image/AboutUs/Hea kruy.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Image.Clip>
+                                            <EllipseGeometry RadiusX="74" RadiusY="74" Center="75,75" />
+                                        </Image.Clip>
+                                    </Image>
+                                </Border>
+
+                                <!-- Name and Title -->
+                                <TextBlock Text="Horn Kruy" FontSize="20" FontWeight="Bold" Foreground="#2D2D70" TextAlignment="Center" Margin="10,20,10,0"/>
+                                <TextBlock Text="Team" FontSize="16" Foreground="#A5A5A5" TextAlignment="Center" Margin="0,5,0,20"/>
+
+                                <!-- Description -->
+                                <TextBlock Text="A kiddo who uses Bootstrap and Laravel in web development. Currently playing around with design via Figma"
+                                           FontSize="14" Foreground="#D1D1E0" TextAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,20"/>
+
+                                <!-- Email -->
+                                <Button Content="xixiguigui20040506@gmail.com" FontSize="14" Foreground="White" Background="#5252AC" BorderBrush="Transparent" 
+                                        Padding="10" HorizontalAlignment="Center" Cursor="Hand"/>
+
+                                <!-- Social Icons -->
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/linkedin.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/telegram.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/git.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/ig.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/X.png" Stretch="Uniform"/>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="5" Background="Transparent" BorderBrush="Transparent">
+                                        <Image Source="/Image/AboutUs/facebook.png" Stretch="Uniform"/>
+                                    </Button>
+                                </StackPanel>
                             </StackPanel>
                         </Border>
                     </Grid>
+
+                    <Grid Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                            <TextBlock Text="Best food offers" Margin="10"/>
+                            <TextBlock Text="Easy to take time" Margin="10"/>
+                            <TextBlock Text="Great daily deal" Margin="10"/>
+                            <TextBlock Text="Easy to practice" Margin="10"/>
+                        </StackPanel>
+
+                    </Grid>
+                   
                 </Grid>
+                
             </Grid>
 
         </ScrollViewer>

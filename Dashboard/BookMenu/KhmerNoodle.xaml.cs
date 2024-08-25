@@ -11,13 +11,14 @@ namespace RecipeCookbook.Dashboard.BookMenu
             InitializeComponent();
         }
 
-        // Define an event
-        public event EventHandler BackButtonClicked;
+        public event EventHandler CloseUserControlRequested;
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            // Raise the event
-            BackButtonClicked?.Invoke(this, EventArgs.Empty);
+            this.Visibility = Visibility.Collapsed;
+            // Raise the event to notify the parent that the control has been closed
+            CloseUserControlRequested?.Invoke(this, EventArgs.Empty);
         }
+
     }
 }

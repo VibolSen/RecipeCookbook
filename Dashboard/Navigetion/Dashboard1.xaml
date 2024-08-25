@@ -52,7 +52,7 @@
 
                 <StackPanel Margin="5">
 
-                    <Border Background="#F5F7F8" 
+                    <Border Background="#EBF4F6" 
                             BorderBrush="#D1D1D1" 
                             CornerRadius="10" 
                             Padding="10" 
@@ -92,12 +92,6 @@
                 <Border CornerRadius="10" Margin="10" Width="800" Height="1100" HorizontalAlignment="Center">
                     <Border.Background>
                         <ImageBrush ImageSource="/Image/Dashbord/slide1.jpg" Stretch="UniformToFill"/>
-                    </Border.Background>
-                </Border>
-
-                <Border CornerRadius="10" Margin="10" Width="800" Height="1100" HorizontalAlignment="Center">
-                    <Border.Background>
-                        <ImageBrush ImageSource="D:\1_STEP Acadermy\Project\WinForm(WPF)\RecipeCookbook\Image\Dashbord\Bannermenu.jpg" Stretch="UniformToFill"/>
                     </Border.Background>
                 </Border>
 

@@ -5,13 +5,157 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:RecipeCookbook.Dashboard.BookMenu"
              mc:Ignorable="d"
-             Height="800"
              Width="850"
              Background="White">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
-            <!-- Content goes here -->
-            <TextBlock Text="Good night" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Image Section -->
+                <Border CornerRadius="10" 
+                        Margin="0,0,0,20" 
+                        Width="800" 
+                        Height="300" 
+                        HorizontalAlignment="Center" 
+                        Grid.Row="0">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Image/BookMenu/Korko.jpg" Stretch="UniformToFill"/>
+                    </Border.Background>
+                </Border>
+
+                <!-- Recipe Title -->
+                <TextBlock Text="Somlor korko kroung" 
+               FontSize="30" 
+               FontWeight="Bold" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Center" 
+               Margin="10,0,0,20" 
+               Foreground="#333"
+               Grid.Row="1"/>
+
+                <!-- Ingredients Section -->
+                <StackPanel Orientation="Vertical" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Top"
+                            Grid.Row="2"
+                            Margin="20,0,0,0" Width="543">
+                    <TextBlock Text="Ingredients:" 
+                   FontSize="20" 
+                   FontWeight="Bold" 
+                   Foreground="Black"/>
+                    
+                    <TextBlock Text="• 1 lb (450g) chicken, pork, or fish, cut into bite-sized pieces" Margin="10" FontSize="16"/>
+
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink" Margin="10">
+                        <TextBlock.Inlines>
+                            <Run Text="  "/>
+                            <Run Text="Vegetables:" TextDecorations="Underline" FontSize="17"/>
+                        </TextBlock.Inlines>
+                    </TextBlock>
+                    <TextBlock Text="• 1 cup pumpkin or squash, cut into cubes" FontSize="15"/>
+                    <TextBlock Text="• 1 cup green papaya, cut into cubes" FontSize="15"/>
+                    <TextBlock Text="• 1 cup long beans or green beans, cut into 2-inch pieces" FontSize="15"/>
+                    <TextBlock Text="• 1 cup eggplant, cut into cubes" FontSize="15"/>
+                    <TextBlock Text="• 1 cup moringa leaves or spinach (optional)" FontSize="15"/>
+                    <TextBlock Text="• 1 cup bamboo shoots, sliced (optional)" FontSize="15"/>
+                    <TextBlock Text="• 1-2 cups water spinach (optional)" FontSize="15"/>
+
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink" FontSize="17" Margin="10">
+                        <TextBlock.Inlines>
+                            <Run Text="  "/>
+                            <Run Text="Herbs and Spices:" TextDecorations="Underline"/>
+                        </TextBlock.Inlines>
+                    </TextBlock>
+                    <TextBlock Text="• 2 tablespoons lemongrass, finely chopped" FontSize="15"/>
+                    <TextBlock Text="• 1 tablespoon galangal, finely chopped" FontSize="15"/>
+                    <TextBlock Text="• 3 cloves garlic, minced" FontSize="15"/>
+                    <TextBlock Text="• 2 shallots, minced" FontSize="15"/>
+                    <TextBlock Text="• 2-3 kaffir lime leaves, finely chopped" FontSize="15"/>
+                    <TextBlock Text="• 1 tablespoon kroeung (Cambodian curry paste) or 1 tablespoon turmeric powder" FontSize="15"/>
+                    <TextBlock Text="• 2 tablespoons fish sauce" FontSize="15"/>
+                    <TextBlock Text="• 1 teaspoon sugar" FontSize="15"/>
+                    <TextBlock Text="• Salt, to taste" FontSize="15"/>
+                    <TextBlock Text="• 4-6 cups water or chicken stock" FontSize="15"/>
+                </StackPanel>
+
+                <!-- Preparation Method Section -->
+                <StackPanel Orientation="Vertical" Margin="20,10,0,0" Height="Auto" Grid.Row="3">
+                    <TextBlock Text="Instructions:" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="Black" 
+                           Height="29"/>
+                    <TextBlock Text="Prepare the Protein:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• If using chicken or pork, season the meat with a little salt and fish sauce, then set aside." FontSize="15"/>
+
+                    <TextBlock Text="Make the Aromatic Base:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• In a mortar and pestle or food processor, combine lemongrass, galangal, garlic, shallots, and kaffir lime leaves." FontSize="15"/>
+                    <TextBlock Text="• Pound or blend until a smooth paste forms." FontSize="15"/>
+
+                    <TextBlock Text="Cook the Aromatic Base:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• In a large pot, heat a small amount of oil over medium heat." FontSize="15"/>
+                    <TextBlock Text="• Add the aromatic paste and cook until fragrant." FontSize="15"/>
+                    <TextBlock Text="• Add the kroeung or turmeric powder and continue to cook for another minute." FontSize="15"/>
+
+                    <TextBlock Text="Add the Protein:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• Add the seasoned chicken, pork, or fish to the pot." FontSize="15"/>
+                    <TextBlock Text="• Cook until the meat is browned and partially cooked through." FontSize="15"/>
+
+                    <TextBlock Text="Add the Vegetables:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• Add the pumpkin or squash, green papaya, long beans or green beans, and eggplant to the pot." FontSize="15"/>
+                    <TextBlock Text="• Pour in the water or chicken stock to cover the ingredients." FontSize="15"/>
+                    <TextBlock Text="• Bring to a boil, then reduce the heat and let it simmer until the vegetables are tender and the meat is fully cooked." FontSize="15"/>
+
+                    <TextBlock Text="Season the Soup:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• Add the fish sauce, sugar, and salt to taste." FontSize="15"/>
+                    <TextBlock Text="• Adjust the seasoning as needed." FontSize="15"/>
+
+                    <TextBlock Text="Add Leafy Greens:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• If using moringa leaves, spinach, or water spinach, add them to the pot and cook until just wilted." FontSize="15"/>
+
+                    <TextBlock Text="Final Adjustments:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" FontSize="15" Margin="5"/>
+                    <TextBlock Text="• Taste the soup and adjust the seasoning if necessary." FontSize="15"/>
+                    <TextBlock Text="• Add more fish sauce or salt to your preference." FontSize="15"/>
+
+                    <TextBlock Text="Serve the Soup:" FontSize="15" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold" Margin="5"/>
+                    <TextBlock Text="• Ladle the soup into serving bowls." FontSize="15"/>
+                    <TextBlock Text="• Garnish with fresh herbs and serve with lime wedges on the side." FontSize="15"/>
+                </StackPanel>
+
+                <UniformGrid Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Columns="2">
+                    <!-- First Item -->
+                    <Border BorderBrush="LightGray" BorderThickness="0" CornerRadius="10" Width="250" Height="250" Margin="10">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/Image/BookMenu/Korko1.jpg" Stretch="UniformToFill"/>
+                        </Border.Background>
+                    </Border>
+
+                    <!-- Second Item -->
+                    <Border BorderBrush="LightGray" BorderThickness="0" CornerRadius="10" Width="250" Height="250" Margin="10">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/Image/BookMenu/Korko2.jpg" Stretch="UniformToFill"/>
+                        </Border.Background>
+                    </Border>
+                </UniformGrid>
+
+                <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <TextBlock Text="Best food offers" Margin="10"/>
+                    <TextBlock Text="Easy to take time" Margin="10"/>
+                    <TextBlock Text="Great daily deal" Margin="10"/>
+                    <TextBlock Text="Easy to practice" Margin="10"/>
+                </StackPanel>
+
+            </Grid>
+
         </ScrollViewer>
     </Grid>
 </UserControl>

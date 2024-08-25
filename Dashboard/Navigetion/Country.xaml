@@ -5,12 +5,8 @@
              Width="850"
              Background="White">
     <Grid>
-
-        <Image Source="/Image/Country/404.png" Width="500"/>
-        <TextBlock Text="We will comming soon !" 
-                   FontSize="24" 
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center"
-                   Margin="10,400,20,20"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image/Country/404.png" Stretch="UniformToFill"/>
+        </Grid.Background>
     </Grid>
 </UserControl>
