@@ -91,6 +91,8 @@
     <None Remove="Image\Home\iceberg.png" />
     <None Remove="Image\Home\khmer-spices.png" />
     <None Remove="Image\Home\kuyteav.png" />
+    <None Remove="Image\Home\slide1.png" />
+    <None Remove="Image\Home\slide2.png" />
     <None Remove="Image\Home\tomato.png" />
     <None Remove="Image\numpjuk.jpg" />
     <None Remove="Image\Recipe\amok.jpg" />
@@ -200,6 +202,8 @@
     <Resource Include="Image\Home\iceberg.png" />
     <Resource Include="Image\Home\khmer-spices.png" />
     <Resource Include="Image\Home\kuyteav.png" />
+    <Resource Include="Image\Home\slide1.png" />
+    <Resource Include="Image\Home\slide2.png" />
     <Resource Include="Image\Home\tomato.png" />
     <Resource Include="Image\numpjuk.jpg" />
     <Resource Include="Image\Recipe\amok.jpg" />

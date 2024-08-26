@@ -192,14 +192,14 @@
                     <!-- First Border with Image -->
                     <Border CornerRadius="10" Margin="10,10,0,10" Height="200" Grid.Column="0" HorizontalAlignment="Left" Width="395" Grid.ColumnSpan="2">
                         <Border.Background>
-                            <ImageBrush ImageSource="D:\1_STEP Acadermy\Project\WinForm(WPF)\RecipeCookbook\Image\Home\slide1.png"/>
+                            <ImageBrush ImageSource="/Image/Home/slide1.png"/>
                         </Border.Background>
                     </Border>
 
                     <!-- Second Border with Image -->
                     <Border CornerRadius="10" Margin="20,10,0,10" Height="200" Grid.Column="1" HorizontalAlignment="Left" Width="395" Grid.ColumnSpan="2">
                         <Border.Background>
-                            <ImageBrush ImageSource="D:\1_STEP Acadermy\Project\WinForm(WPF)\RecipeCookbook\Image\Home\slide2.png"/>
+                            <ImageBrush ImageSource="/Image/Home/slide2.png"/>
                         </Border.Background>
                     </Border>
                 </Grid>
