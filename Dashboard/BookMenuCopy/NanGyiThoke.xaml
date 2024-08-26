@@ -1,0 +1,125 @@
+﻿<Window x:Class="BookCook.BookMenu.NanGyiThoke"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Nan Gyi Thoke (Myanmar Noodle Salad)" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Nan Gyi Thoke (Myanmar Noodle Salad)" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Salad:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 200g rice noodles (thick, or use egg noodles as an alternative)"/>
+            <TextBlock Text="• 1 cup cooked chicken (shredded)"/>
+            <TextBlock Text="• 1/2 cup chickpea flour"/>
+            <TextBlock Text="• 1/4 cup roasted peanuts (crushed)"/>
+            <TextBlock Text="• 1/2 cup sliced red onion"/>
+            <TextBlock Text="• 1/4 cup chopped cilantro"/>
+            <TextBlock Text="• 1/4 cup chopped fresh mint"/>
+            <TextBlock Text="• 1/4 cup sliced cucumber"/>
+            <TextBlock Text="• 1/4 cup bean sprouts"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Dressing:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 3 tablespoons tamarind paste"/>
+            <TextBlock Text="• 3 tablespoons fish sauce"/>
+            <TextBlock Text="• 1 tablespoon soy sauce"/>
+            <TextBlock Text="• 2 tablespoons palm sugar or brown sugar"/>
+            <TextBlock Text="• 1 clove garlic (minced)"/>
+            <TextBlock Text="• 1 teaspoon chili flakes (adjust to taste)"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,371,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Noodles:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Cook the rice noodles according to package instructions. Drain and set aside."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Make the Chickpea Flour Mixture:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat a pan over medium heat and toast the chickpea flour until lightly browned and fragrant. Set aside."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Dressing:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a bowl, whisk together the tamarind paste, fish sauce, soy sauce, palm sugar, minced garlic, and chili flakes until the sugar is dissolved."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Assemble the Salad:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a large bowl, combine the cooked noodles, shredded chicken, chickpea flour, roasted peanuts, sliced red onion, cilantro, mint, cucumber, and bean sprouts."/>
+            <TextBlock Text="• Pour the dressing over the salad and toss everything together until well mixed."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve the salad immediately, garnished with extra peanuts, cilantro, or mint if desired."/>
+            <TextBlock Text="• Enjoy your flavorful and refreshing Nan Gyi Thoke!"/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your delicious Nan Gyi Thoke!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

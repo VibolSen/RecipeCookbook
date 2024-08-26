@@ -1,0 +1,114 @@
+﻿<Window x:Class="BookCook.BookMenu.Larb"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Larb (Laotian Minced Meat Salad)" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Larb (Laotian Minced Meat Salad)" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Main Ingredients:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 500g minced pork, chicken, beef, or duck"/>
+            <TextBlock Text="• 1/2 cup uncooked sticky rice"/>
+            <TextBlock Text="• 1-2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 2-3 tablespoons fish sauce"/>
+            <TextBlock Text="• 2-3 tablespoons lime juice"/>
+            <TextBlock Text="• 1-2 teaspoons sugar"/>
+            <TextBlock Text="• 2-3 cloves garlic (minced)"/>
+            <TextBlock Text="• 2 shallots (thinly sliced)"/>
+            <TextBlock Text="• 1 stalk lemongrass (finely chopped, optional)"/>
+            <TextBlock Text="• 2-3 fresh Thai chilies (chopped, optional)"/>
+            <TextBlock Text="• 1/2 cup fresh mint leaves"/>
+            <TextBlock Text="• 1/2 cup fresh cilantro leaves"/>
+            <TextBlock Text="• 1/4 cup green onions (chopped)"/>
+            <TextBlock Text="• 1/4 cup fresh basil leaves (optional)"/>
+            <TextBlock Text="• Lettuce leaves (for serving)"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,355,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Toasted Rice Powder:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a dry pan, toast the uncooked sticky rice over medium heat, stirring frequently until golden brown."/>
+            <TextBlock Text="• Allow the toasted rice to cool, then grind it into a coarse powder using a mortar and pestle or a spice grinder."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Minced Meat:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat the vegetable oil in a pan over medium heat and sauté the minced garlic until fragrant."/>
+            <TextBlock Text="• Add the minced meat and cook, breaking it apart, until fully cooked through."/>
+            <TextBlock Text="• Remove the pan from heat and let the meat cool slightly."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Mix the Larb:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a large bowl, combine the cooked minced meat with the toasted rice powder."/>
+            <TextBlock Text="• Add the fish sauce, lime juice, sugar, sliced shallots, lemongrass, Thai chilies, mint, cilantro, green onions, and basil leaves."/>
+            <TextBlock Text="• Toss everything together until well mixed. Adjust seasoning to taste."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve the Larb on a plate with fresh lettuce leaves."/>
+            <TextBlock Text="• Scoop the Larb into lettuce leaves and enjoy as a wrap."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your flavorful and refreshing Larb!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

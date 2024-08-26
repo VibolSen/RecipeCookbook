@@ -1,0 +1,110 @@
+﻿<Window x:Class="BookCook.BookMenu.KaengLueang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Kaeng Lueang (Yellow Curry)" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Height="1035" Margin="0,0,10,0">
+        <!-- Image Section -->
+        <Image Source="C:\Path\To\Your\KaengLueangImage.jpg" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Width="300" 
+               Margin="20,20,0,0"/>
+
+        <!-- Title Section -->
+        <TextBlock Text="Kaeng Lueang (Yellow Curry)" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="340,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="340,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                   FontSize="20" 
+                   FontWeight="Bold" 
+                   Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Curry Paste:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 tablespoon turmeric powder"/>
+            <TextBlock Text="• 2 teaspoons coriander seeds"/>
+            <TextBlock Text="• 2 teaspoons cumin seeds"/>
+            <TextBlock Text="• 1 teaspoon black peppercorns"/>
+            <TextBlock Text="• 2-3 dried red chilies (soaked)"/>
+            <TextBlock Text="• 3 cloves garlic (minced)"/>
+            <TextBlock Text="• 1 thumb-sized piece of galangal (chopped)"/>
+            <TextBlock Text="• 1 stalk lemongrass (white part only, finely chopped)"/>
+            <TextBlock Text="• 2-3 kaffir lime leaves (finely chopped)"/>
+            <TextBlock Text="• 1 small shallot (minced)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Main Ingredients:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 500g (1 lb) chicken, cut into bite-sized pieces"/>
+            <TextBlock Text="• 1-2 potatoes, peeled and cubed"/>
+            <TextBlock Text="• 1 cup coconut milk"/>
+            <TextBlock Text="• 2 cups water or chicken broth"/>
+            <TextBlock Text="• 2 tablespoons fish sauce"/>
+            <TextBlock Text="• 1 tablespoon palm sugar"/>
+            <TextBlock Text="• 1 tablespoon lime juice"/>
+            <TextBlock Text="• Fresh cilantro (for garnish)"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="340,419,10,320">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Text="Prepare the Curry Paste:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+            <TextBlock Text="• In a mortar and pestle or blender, grind the turmeric, coriander seeds, cumin seeds, and black peppercorns."/>
+            <TextBlock Text="• Add the soaked chilies, garlic, galangal, lemongrass, kaffir lime leaves, and shallot."/>
+            <TextBlock Text="• Pound or blend until a smooth paste forms. Add a little water if necessary."/>
+
+            <TextBlock Text="Cook the Curry:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+            <TextBlock Text="• Heat a pot over medium heat and add the prepared curry paste." TextWrapping="Wrap"/>
+            <TextBlock Text="• Cook for 2-3 minutes until fragrant."/>
+            <TextBlock Text="• Add the chicken pieces and cook until they are no longer pink."/>
+            <TextBlock Text="• Pour in the coconut milk and water or chicken broth."/>
+            <TextBlock Text="• Add the cubed potatoes and bring to a boil."/>
+            <TextBlock Text="• Reduce the heat and let it simmer for 20-30 minutes until the potatoes are tender." TextWrapping="Wrap"/>
+
+            <TextBlock Text="Season and Serve:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+            <TextBlock Text="• Stir in the fish sauce, palm sugar, and lime juice."/>
+            <TextBlock Text="• Taste and adjust the seasoning if necessary."/>
+            <TextBlock Text="• Ladle the curry into serving bowls and garnish with fresh cilantro."/>
+            <TextBlock Text="• Serve hot with steamed jasmine rice."/>
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your delicious Kaeng Lueang (Yellow Curry)!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,10" 
+                   Foreground="Black" 
+                   Width="430"/>
+    </Grid>
+</Window>

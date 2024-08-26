@@ -1,0 +1,121 @@
+﻿<Window x:Class="BookCook.BookMenu.FishHeadCurry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Fish Head Curry" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Fish Head Curry" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Curry:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 fish head (red snapper or grouper), cleaned and cut in half"/>
+            <TextBlock Text="• 3 tablespoons curry powder (preferably fish curry powder)"/>
+            <TextBlock Text="• 1 tablespoon turmeric powder"/>
+            <TextBlock Text="• 2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 1 large onion, chopped"/>
+            <TextBlock Text="• 5 cloves garlic, minced"/>
+            <TextBlock Text="• 1 inch ginger, minced"/>
+            <TextBlock Text="• 2 tomatoes, chopped"/>
+            <TextBlock Text="• 2 green chilies, slit lengthwise"/>
+            <TextBlock Text="• 2 sprigs curry leaves"/>
+            <TextBlock Text="• 400ml coconut milk"/>
+            <TextBlock Text="• 500ml water or fish stock"/>
+            <TextBlock Text="• 1 tablespoon tamarind paste (soaked in 1/4 cup water and strained)"/>
+            <TextBlock Text="• 100g okra, trimmed"/>
+            <TextBlock Text="• 200g eggplant, cut into chunks"/>
+            <TextBlock Text="• 1 tablespoon sugar"/>
+            <TextBlock Text="• Salt to taste"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink" Margin="0,20,0,0">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="For Garnishing:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Fresh coriander leaves"/>
+            <TextBlock Text="• Lime wedges"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,455,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Curry Base:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Mix the curry powder and turmeric powder with a little water to make a paste. Set aside."/>
+            <TextBlock Text="• Heat the vegetable oil in a large pot over medium heat."/>
+            <TextBlock Text="• Add the chopped onions, garlic, ginger, and curry leaves, and sauté until the onions are soft and golden."/>
+            <TextBlock Text="• Add the curry paste and sauté for a few minutes until the oil separates from the paste."/>
+            <TextBlock Text="• Add the chopped tomatoes and green chilies, and cook until the tomatoes break down and form a thick gravy."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold" Margin="0,20,0,0">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Fish Head:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Pour in the water or fish stock, and bring the mixture to a boil."/>
+            <TextBlock Text="• Stir in the tamarind paste and coconut milk, then add the fish head to the pot."/>
+            <TextBlock Text="• Reduce the heat and let it simmer gently for about 15-20 minutes, or until the fish head is cooked through."/>
+            <TextBlock Text="• Add the okra and eggplant, and cook until the vegetables are tender."/>
+            <TextBlock Text="• Season with sugar and salt to taste."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold" Margin="0,20,0,0">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Transfer the fish head and curry to a large serving dish."/>
+            <TextBlock Text="• Garnish with fresh coriander leaves and serve with lime wedges on the side."/>
+            <TextBlock Text="• Enjoy your Fish Head Curry with steamed rice or bread."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Fish Head Curry!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

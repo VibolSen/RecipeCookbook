@@ -1,0 +1,107 @@
+﻿<Window x:Class="BookCook.BookMenu.MyanmarShrimpCurry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Myanmar Shrimp Curry" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Myanmar Shrimp Curry" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Curry:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 500g shrimp (peeled and deveined)"/>
+            <TextBlock Text="• 2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 1 onion (chopped)"/>
+            <TextBlock Text="• 3 cloves garlic (minced)"/>
+            <TextBlock Text="• 1 tablespoon ginger (minced)"/>
+            <TextBlock Text="• 2 tablespoons curry powder"/>
+            <TextBlock Text="• 1 teaspoon turmeric powder"/>
+            <TextBlock Text="• 1 teaspoon chili powder (adjust to taste)"/>
+            <TextBlock Text="• 1 can (400ml) coconut milk"/>
+            <TextBlock Text="• 1 cup chicken or vegetable stock"/>
+            <TextBlock Text="• 1 tablespoon fish sauce"/>
+            <TextBlock Text="• 1 tablespoon sugar"/>
+            <TextBlock Text="• 1 cup chopped tomatoes"/>
+            <TextBlock Text="• 1/2 cup chopped fresh cilantro (for garnish)"/>
+            <TextBlock Text="• Salt to taste"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,355,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Curry Base:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat the vegetable oil in a large pot over medium heat."/>
+            <TextBlock Text="• Add the chopped onion and cook until translucent."/>
+            <TextBlock Text="• Stir in the minced garlic and ginger, and cook for another minute until fragrant."/>
+            <TextBlock Text="• Add the curry powder, turmeric powder, and chili powder. Stir to combine."/>
+            <TextBlock Text="• Pour in the coconut milk and chicken or vegetable stock. Stir well."/>
+            <TextBlock Text="• Add the chopped tomatoes and bring to a simmer."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Shrimp:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Add the shrimp to the pot and cook until they turn pink and are cooked through, about 5-7 minutes."/>
+            <TextBlock Text="• Stir in the fish sauce and sugar. Adjust seasoning with salt to taste."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Garnish with chopped fresh cilantro before serving."/>
+            <TextBlock Text="• Serve hot with steamed rice or naan bread."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Myanmar Shrimp Curry!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

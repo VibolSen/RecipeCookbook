@@ -1,0 +1,122 @@
+﻿<Window x:Class="BookCook.BookMenu.NasiRawon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Nasi Rawon" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Nasi Rawon" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Rawon Soup:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 500g beef (cut into cubes)"/>
+            <TextBlock Text="• 2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 1 onion (chopped)"/>
+            <TextBlock Text="• 3 cloves garlic (minced)"/>
+            <TextBlock Text="• 2 tablespoons keluak (or black nuts)"/>
+            <TextBlock Text="• 2 stalks lemongrass (white part only, bruised)"/>
+            <TextBlock Text="• 4 kaffir lime leaves (torn)"/>
+            <TextBlock Text="• 2 bay leaves"/>
+            <TextBlock Text="• 1 tablespoon ground coriander"/>
+            <TextBlock Text="• 1 tablespoon ground cumin"/>
+            <TextBlock Text="• 1 teaspoon turmeric powder"/>
+            <TextBlock Text="• 1 teaspoon chili powder (adjust to taste)"/>
+            <TextBlock Text="• 1 tablespoon soy sauce"/>
+            <TextBlock Text="• 1 tablespoon tamarind paste"/>
+            <TextBlock Text="• 1 liter beef broth"/>
+            <TextBlock Text="• Salt and pepper to taste"/>
+            <TextBlock Text="• 1 cup cooked rice (for serving)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For Garnish:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Fried shallots"/>
+            <TextBlock Text="• Fresh coriander leaves"/>
+            <TextBlock Text="• Sliced lime"/>
+            <TextBlock Text="• Sliced red chilies"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,467,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Soup Base:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat the vegetable oil in a large pot over medium heat."/>
+            <TextBlock Text="• Add the chopped onion and cook until translucent."/>
+            <TextBlock Text="• Stir in the minced garlic and cook for another minute."/>
+            <TextBlock Text="• Add the keluak nuts and cook for a few minutes until fragrant."/>
+            <TextBlock Text="• Add the beef cubes and cook until browned on all sides."/>
+            <TextBlock Text="• Stir in the ground coriander, ground cumin, turmeric powder, and chili powder."/>
+            <TextBlock Text="• Pour in the beef broth and add the lemongrass, kaffir lime leaves, and bay leaves. Bring to a boil."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Simmer and Finish:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Reduce the heat to low, cover, and simmer for 1.5 to 2 hours, or until the beef is tender and the flavors are well developed."/>
+            <TextBlock Text="• Stir in the soy sauce, tamarind paste, salt, and pepper. Adjust seasoning to taste."/>
+            <TextBlock Text="• Remove the lemongrass, kaffir lime leaves, and bay leaves before serving."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve the rawon hot over cooked rice."/>
+            <TextBlock Text="• Garnish with fried shallots, fresh coriander leaves, sliced lime, and sliced red chilies."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Nasi Rawon!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

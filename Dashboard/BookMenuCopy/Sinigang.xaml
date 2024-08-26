@@ -1,0 +1,110 @@
+﻿<Window x:Class="BookCook.BookMenu.Sinigang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Sinigang" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Sinigang" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Sinigang:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 kg pork belly or pork ribs, cut into serving pieces"/>
+            <TextBlock Text="• 1 medium onion, sliced"/>
+            <TextBlock Text="• 2 medium tomatoes, quartered"/>
+            <TextBlock Text="• 3 cups water"/>
+            <TextBlock Text="• 1 taro root (gabi), peeled and quartered"/>
+            <TextBlock Text="• 1 radish (labanos), sliced into thin rounds"/>
+            <TextBlock Text="• 5-6 long green beans (sitaw), cut into 2-inch pieces"/>
+            <TextBlock Text="• 1 eggplant, sliced into rounds"/>
+            <TextBlock Text="• 1 bunch kangkong (water spinach)"/>
+            <TextBlock Text="• 2-3 green chili peppers (siling pangsigang)"/>
+            <TextBlock Text="• 1 packet sinigang mix (tamarind soup base) or 1/4 cup fresh tamarind pulp"/>
+            <TextBlock Text="• Fish sauce or salt to taste"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,307,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Pork:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a large pot, bring the pork belly or ribs to a boil in 3 cups of water."/>
+            <TextBlock Text="• Skim off any scum that rises to the surface, then lower the heat to simmer."/>
+            <TextBlock Text="• Add the sliced onion and quartered tomatoes, and continue to simmer until the pork is tender."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Add the Vegetables:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Add the taro root and cook until it starts to soften."/>
+            <TextBlock Text="• Add the radish slices, long green beans, and eggplant. Simmer for 5-7 minutes until the vegetables are tender."/>
+            <TextBlock Text="• Add the green chili peppers and the sinigang mix or tamarind pulp. Stir well to dissolve and incorporate the sour flavor."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Season and Finish:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Season the soup with fish sauce or salt to taste."/>
+            <TextBlock Text="• Add the kangkong (water spinach) last, and cook for another 2-3 minutes until wilted."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve hot with steamed rice."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Sinigang!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

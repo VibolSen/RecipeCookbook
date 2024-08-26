@@ -1,0 +1,137 @@
+﻿<Window x:Class="BookCook.BookMenu.SamlorKorkor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Samlor Korkor" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Height="1035" Margin="0,0,10,0">
+        <!-- Image Section -->
+        <Image Source="C:\Path\To\Your\SamlorKorkorImage.jpg" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Width="300" 
+               Margin="20,20,0,0"/>
+
+        <!-- Title Section -->
+        <TextBlock Text="Samlor Korkor" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="340,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="340,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Protein:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 lb (450g) chicken, pork, or fish, cut into bite-sized pieces"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Vegetables:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 cup pumpkin or squash, cut into cubes"/>
+            <TextBlock Text="• 1 cup green papaya, cut into cubes"/>
+            <TextBlock Text="• 1 cup long beans or green beans, cut into 2-inch pieces"/>
+            <TextBlock Text="• 1 cup eggplant, cut into cubes"/>
+            <TextBlock Text="• 1 cup moringa leaves or spinach (optional)"/>
+            <TextBlock Text="• 1 cup bamboo shoots, sliced (optional)"/>
+            <TextBlock Text="• 1-2 cups water spinach (optional)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Herbs and Spices:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2 tablespoons lemongrass, finely chopped"/>
+            <TextBlock Text="• 1 tablespoon galangal, finely chopped"/>
+            <TextBlock Text="• 3 cloves garlic, minced"/>
+            <TextBlock Text="• 2 shallots, minced"/>
+            <TextBlock Text="• 2-3 kaffir lime leaves, finely chopped"/>
+            <TextBlock Text="• 1 tablespoon kroeung (Cambodian curry paste) or 1 tablespoon turmeric powder"/>
+            <TextBlock Text="• 2 tablespoons fish sauce"/>
+            <TextBlock Text="• 1 teaspoon sugar"/>
+            <TextBlock Text="• Salt, to taste"/>
+            <TextBlock Text="• 4-6 cups water or chicken stock"/>
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                      HorizontalScrollBarVisibility="Disabled"
+                      Margin="340,435,10,100">
+            <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Height="500">
+                <TextBlock Text="Instructions:" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="Black" 
+                           Height="29"/>
+                <TextBlock Text="Prepare the Protein:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• If using chicken or pork, season the meat with a little salt and fish sauce, then set aside."/>
+                
+                <TextBlock Text="Make the Aromatic Base:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• In a mortar and pestle or food processor, combine lemongrass, galangal, garlic, shallots, and kaffir lime leaves."/>
+                <TextBlock Text="• Pound or blend until a smooth paste forms."/>
+
+                <TextBlock Text="Cook the Aromatic Base:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• In a large pot, heat a small amount of oil over medium heat."/>
+                <TextBlock Text="• Add the aromatic paste and cook until fragrant."/>
+                <TextBlock Text="• Add the kroeung or turmeric powder and continue to cook for another minute."/>
+
+                <TextBlock Text="Add the Protein:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Add the seasoned chicken, pork, or fish to the pot."/>
+                <TextBlock Text="• Cook until the meat is browned and partially cooked through."/>
+
+                <TextBlock Text="Add the Vegetables:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Add the pumpkin or squash, green papaya, long beans or green beans, and eggplant to the pot."/>
+                <TextBlock Text="• Pour in the water or chicken stock to cover the ingredients."/>
+                <TextBlock Text="• Bring to a boil, then reduce the heat and let it simmer until the vegetables are tender and the meat is fully cooked."/>
+
+                <TextBlock Text="Season the Soup:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Add the fish sauce, sugar, and salt to taste."/>
+                <TextBlock Text="• Adjust the seasoning as needed."/>
+
+                <TextBlock Text="Add Leafy Greens:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• If using moringa leaves, spinach, or water spinach, add them to the pot and cook until just wilted."/>
+
+                <TextBlock Text="Final Adjustments:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Taste the soup and adjust the seasoning if necessary."/>
+                <TextBlock Text="• Add more fish sauce or salt to your preference."/>
+
+                <TextBlock Text="Serve the Soup:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Ladle the soup into serving bowls."/>
+                <TextBlock Text="• Garnish with fresh herbs and serve with lime wedges on the side."/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your delicious Samlor Korkor!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,10" 
+                   Foreground="Black" 
+                   Width="280"/>
+    </Grid>
+</Window>

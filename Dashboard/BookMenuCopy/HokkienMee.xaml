@@ -1,0 +1,118 @@
+﻿<Window x:Class="BookCook.BookMenu.HokkienMee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Hokkien Mee" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Hokkien Mee" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Noodles:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 400g Hokkien noodles (fresh or dried)"/>
+            <TextBlock Text="• 200g prawns (peeled and deveined)"/>
+            <TextBlock Text="• 100g pork belly (sliced thinly)"/>
+            <TextBlock Text="• 2 eggs (beaten)"/>
+            <TextBlock Text="• 100g bean sprouts"/>
+            <TextBlock Text="• 2 cloves garlic (minced)"/>
+            <TextBlock Text="• 2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 1 cup chicken or pork stock"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Sauce:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 3 tablespoons soy sauce"/>
+            <TextBlock Text="• 2 tablespoons oyster sauce"/>
+            <TextBlock Text="• 1 tablespoon dark soy sauce"/>
+            <TextBlock Text="• 1 teaspoon sugar"/>
+            <TextBlock Text="• 1/2 teaspoon white pepper"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,339,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Sauce:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a small bowl, mix together soy sauce, oyster sauce, dark soy sauce, sugar, and white pepper. Set aside."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Stir-Fry the Ingredients:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat vegetable oil in a large pan or wok over medium-high heat."/>
+            <TextBlock Text="• Add the minced garlic and stir-fry until fragrant."/>
+            <TextBlock Text="• Add the sliced pork belly and stir-fry until cooked through and slightly crispy."/>
+            <TextBlock Text="• Add the prawns and cook until pink and opaque."/>
+            <TextBlock Text="• Push the ingredients to one side of the pan and pour the beaten eggs into the empty space. Scramble the eggs until just set and mix with the other ingredients."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Add the Noodles:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Add the Hokkien noodles and pour in the prepared sauce. Stir-fry everything together, ensuring the noodles are well coated with the sauce and heated through."/>
+            <TextBlock Text="• Add the bean sprouts and stir-fry for another 1-2 minutes until the sprouts are slightly wilted but still crisp."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve hot, garnished with extra bean sprouts if desired."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Hokkien Mee!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

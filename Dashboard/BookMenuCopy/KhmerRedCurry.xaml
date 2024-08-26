@@ -1,0 +1,174 @@
+﻿<Window x:Class="BookCook.BookMenu.KhmerRedCurry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Khmer Red Curry" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Height="1035" Margin="0,0,10,0">
+        <!-- Image Section -->
+        <Image Source="C:\Path\To\Your\KhmerRedCurryImage.jpg" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Width="300" 
+               Margin="20,20,0,0"/>
+
+        <!-- Title Section -->
+        <TextBlock Text="Khmer Red Curry" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="340,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="340,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Meat or Protein (optional):" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Chicken, beef, pork, or tofu"/>
+            <TextBlock Text="• You can also use a combination of meats and seafood."/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Vegetables:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 cup of eggplant (cubed)"/>
+            <TextBlock Text="• 1 cup of sweet potato or pumpkin (cubed)"/>
+            <TextBlock Text="• 1 cup of green beans (cut into 2-inch pieces)"/>
+            <TextBlock Text="• 1 cup of carrot (sliced)"/>
+            <TextBlock Text="• 1 bell pepper (sliced)"/>
+            <TextBlock Text="• 1 onion (sliced)"/>
+            <TextBlock Text="• 1-2 tomatoes (quartered)"/>
+            <TextBlock Text="• 1-2 cups of spinach or kale (optional)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Coconut Milk:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2 cups of coconut milk"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Curry Paste:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2-3 tablespoons of Khmer curry paste (Kroeung), which includes ingredients like lemongrass, galangal, kaffir lime leaves, garlic, shallots, and turmeric."/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Aromatics and Herbs:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2-3 kaffir lime leaves (optional)"/>
+            <TextBlock Text="• 1 stalk of lemongrass (bruised and cut into 2-inch pieces)"/>
+            <TextBlock Text="• 2-3 cloves of garlic (minced)"/>
+            <TextBlock Text="• 1-2 shallots (minced)"/>
+            <TextBlock Text="• 1-2 red chilies (optional, for heat)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Seasonings:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1-2 tablespoons of fish sauce (or soy sauce for a vegetarian option)"/>
+            <TextBlock Text="• 1 tablespoon of palm sugar or brown sugar"/>
+            <TextBlock Text="• Salt to taste"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Oil:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2 tablespoons of vegetable oil or coconut oil"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Garnish (optional):" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Fresh cilantro or basil leaves"/>
+            <TextBlock Text="• Lime wedges"/>
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                      HorizontalScrollBarVisibility="Disabled"
+                      Margin="340,589,10,34">
+            <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Height="500">
+                <TextBlock Text="Instructions:" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="Black" 
+                           Height="29"/>
+
+                <TextBlock Text="Prepare the Ingredients:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Cut the meat or protein into bite-sized pieces."/>
+                <TextBlock Text="• Chop all vegetables as specified."/>
+                <TextBlock Text="• Mince the garlic and shallots, and prepare the curry paste if making from scratch."/>
+
+                <TextBlock Text="Cook the Aromatics:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Heat the oil in a large pot over medium heat."/>
+                <TextBlock Text="• Add the minced garlic, shallots, lemongrass, and curry paste. Sauté until fragrant, about 2-3 minutes."/>
+
+                <TextBlock Text="Add the Meat/Protein:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Add the meat or tofu to the pot and cook until browned on all sides."/>
+
+                <TextBlock Text="Add the Vegetables:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Stir in the harder vegetables first, like sweet potato, pumpkin, and carrots. Cook for about 5 minutes."/>
+                <TextBlock Text="• Add the remaining vegetables (eggplant, green beans, bell pepper, tomatoes) and stir well."/>
+
+                <TextBlock Text="Simmer with Coconut Milk:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Pour in the coconut milk and stir to combine."/>
+                <TextBlock Text="• Add the kaffir lime leaves, fish sauce, and palm sugar."/>
+                <TextBlock Text="• Bring the mixture to a gentle boil, then reduce the heat to low and simmer for 20-30 minutes, or until the vegetables are tender."/>
+
+                <TextBlock Text="Adjust Seasoning:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Taste the curry and adjust the seasoning with salt, more fish sauce, or sugar as needed."/>
+                <TextBlock Text="• If you prefer a thinner curry, you can add a bit of water or more coconut milk."/>
+
+                <TextBlock Text="Add Leafy Greens (Optional):" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• If using spinach or kale, add it in the last 5 minutes of cooking."/>
+
+                <TextBlock Text="Serve:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Serve the curry hot over steamed rice or with bread."/>
+                <TextBlock Text="• Garnish with fresh cilantro or basil and a squeeze of lime juice if desired."/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your delicious Khmer Red Curry!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="10,0,0,10" 
+                   Foreground="Black" 
+                   Width="330"/>
+    </Grid>
+</Window>

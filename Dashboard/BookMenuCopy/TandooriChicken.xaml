@@ -1,0 +1,109 @@
+﻿<Window x:Class="BookCook.BookMenu.TandooriChicken"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Tandoori Chicken" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Tandoori Chicken" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Marinade:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 kg chicken (cut into pieces)"/>
+            <TextBlock Text="• 1 cup plain yogurt"/>
+            <TextBlock Text="• 2 tablespoons lemon juice"/>
+            <TextBlock Text="• 2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 2 tablespoons tandoori masala"/>
+            <TextBlock Text="• 1 tablespoon ground cumin"/>
+            <TextBlock Text="• 1 tablespoon ground coriander"/>
+            <TextBlock Text="• 1 teaspoon ground turmeric"/>
+            <TextBlock Text="• 1 teaspoon paprika"/>
+            <TextBlock Text="• 1 teaspoon chili powder"/>
+            <TextBlock Text="• 1 teaspoon garlic paste"/>
+            <TextBlock Text="• 1 teaspoon ginger paste"/>
+            <TextBlock Text="• Salt to taste"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,323,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Marinade:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a large bowl, mix together the yogurt, lemon juice, vegetable oil, tandoori masala, cumin, coriander, turmeric, paprika, chili powder, garlic paste, ginger paste, and salt to form the marinade." TextWrapping="Wrap"/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Marinate the Chicken:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Add the chicken pieces to the marinade and coat thoroughly. Cover and refrigerate for at least 2 hours, preferably overnight for better flavor."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Chicken:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Preheat the oven to 200°C (400°F) or prepare a grill."/>
+            <TextBlock Text="• Arrange the marinated chicken pieces on a baking sheet or grill rack."/>
+            <TextBlock Text="• Bake in the preheated oven or grill for 30-40 minutes, turning occasionally, until the chicken is cooked through and has a slightly charred exterior."/>
+            <TextBlock Text="• Optionally, you can brush the chicken with melted butter or oil during cooking for extra flavor and moisture."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve hot with naan bread or rice, and garnish with fresh cilantro or lemon wedges if desired."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your delicious Tandoori Chicken!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

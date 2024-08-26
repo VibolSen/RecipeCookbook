@@ -1,0 +1,138 @@
+﻿<Window x:Class="BookCook.BookMenu.HainaneseChickenRice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Hainanese Chicken Rice" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Hainanese Chicken Rice" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Chicken:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 whole chicken, about 1.5 to 2 kg"/>
+            <TextBlock Text="• 5-6 slices ginger"/>
+            <TextBlock Text="• 2 stalks green onions"/>
+            <TextBlock Text="• 1 tablespoon sesame oil"/>
+            <TextBlock Text="• Salt to taste"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Rice:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2 cups jasmine rice"/>
+            <TextBlock Text="• 3-4 cloves garlic, minced"/>
+            <TextBlock Text="• 3-4 slices ginger"/>
+            <TextBlock Text="• 2 tablespoons chicken fat or vegetable oil"/>
+            <TextBlock Text="• 2 1/2 cups chicken broth (from cooking the chicken)"/>
+            <TextBlock Text="• 1/2 teaspoon salt"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Dipping Sauces:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Soy sauce (light and dark)"/>
+            <TextBlock Text="• 1/4 cup ginger, finely grated"/>
+            <TextBlock Text="• 1/4 cup garlic, finely minced"/>
+            <TextBlock Text="• 1/4 cup red chilies, finely chopped"/>
+            <TextBlock Text="• 1/2 cup chicken broth"/>
+            <TextBlock Text="• 2 tablespoons lime juice"/>
+            <TextBlock Text="• 1 teaspoon sugar"/>
+            <TextBlock Text="• Salt to taste"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,451,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Chicken:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Rub the chicken with salt, making sure to clean the skin."/>
+            <TextBlock Text="• Rinse the chicken thoroughly under cold water."/>
+            <TextBlock Text="• In a large pot, bring enough water to a boil to submerge the chicken."/>
+            <TextBlock Text="• Add the ginger slices and green onions to the pot."/>
+            <TextBlock Text="• Submerge the chicken, breast side down, in the boiling water."/>
+            <TextBlock Text="• Reduce the heat to low and simmer the chicken for 40-50 minutes, or until fully cooked."/>
+            <TextBlock Text="• Once cooked, remove the chicken and immediately plunge it into an ice bath to stop the cooking and firm up the skin."/>
+            <TextBlock Text="• After a few minutes, remove the chicken from the ice bath, pat dry, and brush with sesame oil. Set aside."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Rice:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a wok or large pan, heat the chicken fat or vegetable oil over medium heat."/>
+            <TextBlock Text="• Add the minced garlic and ginger slices, and sauté until fragrant."/>
+            <TextBlock Text="• Add the jasmine rice and stir to coat the rice with the oil and aromatics."/>
+            <TextBlock Text="• Transfer the rice to a rice cooker, add the chicken broth, and salt, then cook the rice as usual."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Dipping Sauces:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• For the ginger-garlic sauce: Mix the grated ginger, minced garlic, and a pinch of salt in a small bowl."/>
+            <TextBlock Text="• For the chili sauce: Combine the chopped red chilies, lime juice, sugar, and a pinch of salt in another bowl."/>
+            <TextBlock Text="• Serve light and dark soy sauce on the side."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Carve the chicken into serving pieces and serve it with the fragrant rice, dipping sauces, and a bowl of the chicken broth."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Hainanese Chicken Rice!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

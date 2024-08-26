@@ -1,0 +1,113 @@
+﻿<Window x:Class="BookCook.BookMenu.BanhKhot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Banh Khot (Mini Crispy Pancakes)" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Banh Khot (Mini Crispy Pancakes)" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Batter:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 200g rice flour"/>
+            <TextBlock Text="• 50g cornstarch"/>
+            <TextBlock Text="• 1/2 teaspoon turmeric powder"/>
+            <TextBlock Text="• 400ml coconut milk"/>
+            <TextBlock Text="• 200ml water"/>
+            <TextBlock Text="• 1/2 teaspoon salt"/>
+            <TextBlock Text="• 1/2 teaspoon sugar"/>
+            <TextBlock Text="• 2 spring onions (finely chopped)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Toppings:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 200g small shrimp (peeled and deveined)"/>
+            <TextBlock Text="• 100g mung beans (cooked and mashed)"/>
+            <TextBlock Text="• Fresh lettuce leaves"/>
+            <TextBlock Text="• Fresh herbs (mint, basil, cilantro)"/>
+            <TextBlock Text="• Pickled carrots and daikon radish (optional)"/>
+            <TextBlock Text="• Fish sauce (for dipping)"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,355,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Batter:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a mixing bowl, combine rice flour, cornstarch, turmeric powder, salt, and sugar."/>
+            <TextBlock Text="• Gradually add coconut milk and water, stirring to form a smooth batter."/>
+            <TextBlock Text="• Stir in the chopped spring onions and let the batter rest for 20 minutes."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Pancakes:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat a Banh Khot pan or a mini pancake pan over medium heat. Lightly oil the molds."/>
+            <TextBlock Text="• Pour a small amount of batter into each mold, filling them halfway."/>
+            <TextBlock Text="• Place a shrimp and a spoonful of mashed mung beans on top of each pancake."/>
+            <TextBlock Text="• Cover the pan with a lid and cook for 3-5 minutes until the edges are crispy and the pancake is cooked through."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Remove the pancakes from the pan and serve them on a plate."/>
+            <TextBlock Text="• Serve with fresh lettuce, herbs, and pickled vegetables on the side."/>
+            <TextBlock Text="• Dip the pancakes in fish sauce before eating."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your crispy and delicious Banh Khot!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

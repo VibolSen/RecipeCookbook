@@ -1,0 +1,96 @@
+﻿<Window x:Class="BookCook.BookMenu.BurmeseTofu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Burmese Tofu (Shan Tofu)" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Burmese Tofu (Shan Tofu)" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Tofu:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 cup chickpea flour"/>
+            <TextBlock Text="• 1/4 cup cornstarch"/>
+            <TextBlock Text="• 1/2 teaspoon turmeric powder"/>
+            <TextBlock Text="• 1/2 teaspoon salt"/>
+            <TextBlock Text="• 2 cups water"/>
+            <TextBlock Text="• 1 tablespoon vegetable oil (for greasing the pan)"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,211,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Mixture:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a large bowl, whisk together the chickpea flour, cornstarch, turmeric powder, and salt."/>
+            <TextBlock Text="• Gradually add water to the dry ingredients, whisking continuously until smooth and free of lumps."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Tofu:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat a non-stick pan over medium heat and lightly grease it with vegetable oil."/>
+            <TextBlock Text="• Pour the mixture into the pan and spread it evenly."/>
+            <TextBlock Text="• Cook for about 10-15 minutes, stirring occasionally, until the mixture thickens and starts to pull away from the sides of the pan."/>
+            <TextBlock Text="• Once thickened, transfer the mixture to a greased dish and smooth it out with a spatula. Let it cool to set."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Once set and firm, cut the tofu into cubes or slices as desired."/>
+            <TextBlock Text="• Burmese tofu can be enjoyed warm or cold, and is often served with a variety of condiments or used in salads and stir-fries."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your homemade Burmese Tofu!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

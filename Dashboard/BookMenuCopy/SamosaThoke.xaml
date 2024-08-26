@@ -1,0 +1,120 @@
+﻿<Window x:Class="BookCook.BookMenu.SamosaThoke"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Samosa Thoke (Myanmar Samosa Salad)" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Samosa Thoke (Myanmar Samosa Salad)" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Samosas:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 10-12 samosas (store-bought or homemade, see below for homemade recipe)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Salad:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 cup shredded lettuce"/>
+            <TextBlock Text="• 1/2 cup sliced cucumber"/>
+            <TextBlock Text="• 1/2 cup sliced tomatoes"/>
+            <TextBlock Text="• 1/4 cup sliced red onion"/>
+            <TextBlock Text="• 1/4 cup chopped fresh cilantro"/>
+            <TextBlock Text="• 1/4 cup chopped fresh mint"/>
+            <TextBlock Text="• 1/4 cup roasted peanuts (crushed)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Dressing:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2 tablespoons tamarind paste"/>
+            <TextBlock Text="• 2 tablespoons fish sauce"/>
+            <TextBlock Text="• 1 tablespoon soy sauce"/>
+            <TextBlock Text="• 1 tablespoon sugar"/>
+            <TextBlock Text="• 1 clove garlic (minced)"/>
+            <TextBlock Text="• 1 teaspoon chili flakes (adjust to taste)"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,371,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Samosas:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• If using store-bought samosas, bake or fry them according to package instructions until crispy and golden."/>
+            <TextBlock Text="• If making homemade samosas, prepare the filling and pastry, and cook according to your preferred recipe."/>
+            <TextBlock Text="• Once cooked, let the samosas cool slightly and then cut them into bite-sized pieces."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Salad and Dressing:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a large bowl, combine the shredded lettuce, sliced cucumber, sliced tomatoes, sliced red onion, chopped cilantro, and mint."/>
+            <TextBlock Text="• In a small bowl, whisk together the tamarind paste, fish sauce, soy sauce, sugar, minced garlic, and chili flakes until well combined."/>
+            <TextBlock Text="• Add the samosa pieces to the salad and gently toss to combine."/>
+            <TextBlock Text="• Pour the dressing over the salad and toss again until everything is evenly coated."/>
+            <TextBlock Text="• Garnish with roasted peanuts before serving."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve the Samosa Thoke immediately as a light and flavorful meal or appetizer."/>
+            <TextBlock Text="• Enjoy your delicious Samosa Thoke!" />
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Samosa Thoke!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

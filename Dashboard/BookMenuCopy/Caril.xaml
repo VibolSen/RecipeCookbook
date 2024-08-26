@@ -1,0 +1,114 @@
+﻿<Window x:Class="BookCook.BookMenu.Caril"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Caril" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Caril" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Main Dish:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 500g chicken thighs or beef, cut into bite-sized pieces"/>
+            <TextBlock Text="• 2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 1 large onion, chopped"/>
+            <TextBlock Text="• 4 cloves garlic, minced"/>
+            <TextBlock Text="• 1 inch ginger, minced"/>
+            <TextBlock Text="• 2 tablespoons curry powder"/>
+            <TextBlock Text="• 1 teaspoon turmeric powder"/>
+            <TextBlock Text="• 1 teaspoon paprika"/>
+            <TextBlock Text="• 2 tomatoes, chopped"/>
+            <TextBlock Text="• 1 cup coconut milk"/>
+            <TextBlock Text="• 1 cup water or chicken stock"/>
+            <TextBlock Text="• 2 tablespoons fish sauce"/>
+            <TextBlock Text="• 1 tablespoon sugar"/>
+            <TextBlock Text="• 2 carrots, peeled and sliced"/>
+            <TextBlock Text="• 1 bell pepper, chopped"/>
+            <TextBlock Text="• 1 cup potatoes, peeled and diced"/>
+            <TextBlock Text="• 1-2 green chilies, sliced (optional, for extra heat)"/>
+            <TextBlock Text="• Salt and pepper to taste"/>
+            <TextBlock Text="• Fresh cilantro or basil for garnish (optional)"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,419,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Spice Mixture:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• In a small bowl, mix together curry powder, turmeric powder, and paprika. Set aside."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold" Margin="0,20,0,0">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Caril:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat the vegetable oil in a large pot over medium heat."/>
+            <TextBlock Text="• Add the chopped onion, garlic, and ginger, and sauté until the onions are soft and golden."/>
+            <TextBlock Text="• Stir in the spice mixture and cook for a few minutes until fragrant."/>
+            <TextBlock Text="• Add the chopped tomatoes and cook until they start to break down and form a thick sauce."/>
+            <TextBlock Text="• Add the chicken or beef pieces to the pot, stirring to coat with the spices and tomatoes."/>
+            <TextBlock Text="• Pour in the coconut milk and water or chicken stock. Bring to a boil, then reduce heat to low."/>
+            <TextBlock Text="• Simmer for about 20-30 minutes, or until the meat is tender and cooked through."/>
+            <TextBlock Text="• Add the carrots, bell pepper, and potatoes. Cook until the vegetables are tender."/>
+            <TextBlock Text="• Stir in fish sauce, sugar, and adjust seasoning with salt and pepper."/>
+            <TextBlock Text="• Add green chilies if using, and cook for an additional 5 minutes."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold" Margin="0,20,0,0">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Serve the Caril hot, garnished with fresh cilantro or basil if desired."/>
+            <TextBlock Text="• Enjoy it with steamed rice or bread."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Caril!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>

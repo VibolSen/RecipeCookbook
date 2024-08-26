@@ -1,0 +1,136 @@
+﻿<Window x:Class="BookCook.BookMenu.PadThai"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Pad Thai" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Height="1035" Margin="0,0,10,0">
+        <!-- Image Section -->
+        <Image Source="C:\Path\To\Your\PadThaiImage.jpg" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Width="300" 
+               Margin="20,20,0,0"/>
+
+        <!-- Title Section -->
+        <TextBlock Text="Pad Thai" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="340,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="340,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                   FontSize="20" 
+                   FontWeight="Bold" 
+                   Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Noodles:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 200g (7 oz) rice noodles (flat noodles)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Protein:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 200g (7 oz) shrimp, peeled and deveined (or chicken, tofu)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Pad Thai Sauce:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 3 tablespoons tamarind paste"/>
+            <TextBlock Text="• 2 tablespoons fish sauce"/>
+            <TextBlock Text="• 1 tablespoon palm sugar (or brown sugar)"/>
+            <TextBlock Text="• 1 tablespoon soy sauce (optional)"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="Vegetables and Add-Ins:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 2 cloves garlic, minced"/>
+            <TextBlock Text="• 2 shallots, thinly sliced"/>
+            <TextBlock Text="• 1 cup bean sprouts"/>
+            <TextBlock Text="• 1/4 cup chopped roasted peanuts"/>
+            <TextBlock Text="• 2 eggs, lightly beaten"/>
+            <TextBlock Text="• 2 green onions, chopped"/>
+            <TextBlock Text="• 1/4 cup fresh cilantro, chopped"/>
+            <TextBlock Text="• 1 lime, cut into wedges"/>
+            <TextBlock Text="• Fresh red chili or chili flakes (optional)"/>
+            <TextBlock Text="• 1 tablespoon vegetable oil"/>
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                      HorizontalScrollBarVisibility="Disabled"
+                      Margin="340,414,10,254">
+            <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Height="366">
+                <TextBlock Text="Instructions:" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="Black" 
+                           Height="29"/>
+                <TextBlock Text="Prepare the Noodles:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Soak the rice noodles in warm water for about 30 minutes until they are soft but still slightly firm. Drain and set aside."/>
+
+                <TextBlock Text="Make the Pad Thai Sauce:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• In a small bowl, mix the tamarind paste, fish sauce, palm sugar, and soy sauce. Stir until the sugar is dissolved. Set aside." TextWrapping="Wrap"/>
+
+                <TextBlock Text="Cook the Protein:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Heat 1 tablespoon of oil in a large pan or wok over medium-high heat." TextWrapping="Wrap"/>
+                <TextBlock Text="• Add the shrimp (or chicken/tofu) and cook until it's just done, about 2-3 minutes. Remove from the pan and set aside."/>
+
+                <TextBlock Text="Stir-Fry the Aromatics:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• In the same pan, add a little more oil if needed, and sauté the minced garlic and shallots until fragrant, about 1-2 minutes." TextWrapping="Wrap"/>
+
+                <TextBlock Text="Cook the Noodles:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Add the soaked and drained noodles to the pan and pour the Pad Thai sauce over them." TextWrapping="Wrap"/>
+                <TextBlock Text="• Toss the noodles in the sauce to coat them evenly. If the noodles seem too dry, you can add a splash of water."/>
+
+                <TextBlock Text="Add the Eggs:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Push the noodles to one side of the pan, and pour the beaten eggs into the empty space." TextWrapping="Wrap"/>
+                <TextBlock Text="• Let the eggs set slightly, then scramble them and mix them into the noodles."/>
+
+                <TextBlock Text="Add Protein and Vegetables:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Add the cooked shrimp back to the pan, along with bean sprouts, green onions, and half of the chopped peanuts." TextWrapping="Wrap"/>
+                <TextBlock Text="• Toss everything together until well combined and heated through."/>
+
+                <TextBlock Text="Serve:" TextDecorations="Underline" Foreground="DeepPink" FontWeight="Bold"/>
+                <TextBlock Text="• Transfer the Pad Thai to serving plates."/>
+                <TextBlock Text="• Garnish with the remaining chopped peanuts, fresh cilantro, lime wedges, and chili flakes or fresh chili if you like it spicy."/>
+                <TextBlock Text="• Serve hot with a squeeze of lime juice over the top."/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your delicious Pad Thai!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,10" 
+                   Foreground="Black" 
+                   Width="280"/>
+    </Grid>
+</Window>

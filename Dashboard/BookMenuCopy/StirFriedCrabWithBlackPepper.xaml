@@ -1,0 +1,105 @@
+﻿<Window x:Class="BookCook.BookMenu.StirFriedCrabWithBlackPepper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookCook.BookMenu"
+        mc:Ignorable="d"
+        Title="Stir-Fried Crab with Black Pepper" 
+        Height="Auto" 
+        Width="1000">
+    <Grid Margin="0,0,10,0">
+
+        <!-- Title Section -->
+        <TextBlock Text="Stir-Fried Crab with Black Pepper" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="10,20,0,0" 
+                   Foreground="Black"/>
+
+        <!-- Ingredients Section -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="10,68,0,0" Width="543">
+
+            <TextBlock Text="Ingredients:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black"/>
+
+            <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                <TextBlock.Inlines>
+                    <Run Text="  "/>
+                    <Run Text="For the Dish:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• 1 kg crab (cleaned and cut into pieces)"/>
+            <TextBlock Text="• 2 tablespoons vegetable oil"/>
+            <TextBlock Text="• 3 cloves garlic, minced"/>
+            <TextBlock Text="• 1 large onion, sliced"/>
+            <TextBlock Text="• 2-3 green chilies, sliced (optional, for extra heat)"/>
+            <TextBlock Text="• 1 tablespoon freshly ground black pepper"/>
+            <TextBlock Text="• 2 tablespoons soy sauce"/>
+            <TextBlock Text="• 1 tablespoon oyster sauce"/>
+            <TextBlock Text="• 1 tablespoon fish sauce"/>
+            <TextBlock Text="• 1 teaspoon sugar"/>
+            <TextBlock Text="• 1/2 cup water"/>
+            <TextBlock Text="• Fresh cilantro for garnish (optional)"/>
+            <TextBlock Text="• Lime wedges for serving"/>
+
+        </StackPanel>
+
+        <!-- Preparation Method Section -->
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.49,0.516" Margin="10,323,10,373">
+            <TextBlock Text="Instructions:" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Foreground="Black" 
+                       Height="29"/>
+            <TextBlock Foreground="DeepPink" FontWeight="Bold">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Prepare the Crab:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Clean and cut the crab into pieces. Remove the gills and the stomach sac, if necessary. Set aside."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold" Margin="0,20,0,0">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Cook the Crab:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Heat the vegetable oil in a large pan or wok over medium-high heat."/>
+            <TextBlock Text="• Add the minced garlic and sliced onion. Sauté until fragrant and the onions are translucent."/>
+            <TextBlock Text="• If using, add the sliced green chilies and cook for another minute."/>
+            <TextBlock Text="• Add the crab pieces to the pan and stir-fry for about 5-7 minutes, or until the crab is cooked through and turns red."/>
+            <TextBlock Text="• Add the freshly ground black pepper, soy sauce, oyster sauce, fish sauce, and sugar. Stir well to coat the crab with the sauce and spices."/>
+            <TextBlock Text="• Pour in the water and let the mixture simmer for about 5 minutes, or until the sauce slightly thickens and coats the crab."/>
+            <TextBlock Text="• Adjust seasoning with more black pepper or salt if needed."/>
+
+            <TextBlock Foreground="DeepPink" FontWeight="Bold" Margin="0,20,0,0">
+                <TextBlock.Inlines>
+                    <Run Text=" "/>
+                    <Run Text="Serve:" TextDecorations="Underline"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Text="• Garnish with fresh cilantro if desired."/>
+            <TextBlock Text="• Serve hot with lime wedges on the side for added flavor."/>
+
+        </StackPanel>
+
+        <!-- Footer Section -->
+        <TextBlock Text="Enjoy your Stir-Fried Crab with Black Pepper!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="20,0,0,214" 
+                   Foreground="Black" 
+                   Width="auto" Height="25"/>
+    </Grid>
+</Window>
