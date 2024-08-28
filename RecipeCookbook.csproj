@@ -58,6 +58,7 @@
     <None Remove="Image\BookMenu\Tofu2.png" />
     <None Remove="Image\BookMenu\Tofubn.png" />
     <None Remove="Image\Country\404.png" />
+    <None Remove="Image\DashboardWindow\AboutUs.png" />
     <None Remove="Image\DashboardWindow\Close.png" />
     <None Remove="Image\DashboardWindow\Country.png" />
     <None Remove="Image\DashboardWindow\Dashboard.png" />
@@ -236,6 +237,7 @@
     <Resource Include="Image\BookMenu\Tofu2.png" />
     <Resource Include="Image\BookMenu\Tofubn.png" />
     <Resource Include="Image\Country\404.png" />
+    <Resource Include="Image\DashboardWindow\AboutUs.png" />
     <Resource Include="Image\DashboardWindow\Close.png" />
     <Resource Include="Image\DashboardWindow\Country.png" />
     <Resource Include="Image\DashboardWindow\Dashboard.png" />
