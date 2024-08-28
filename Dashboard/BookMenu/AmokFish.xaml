@@ -53,22 +53,22 @@
                                FontWeight="Bold" 
                                Foreground="Black"/>
 
-                    <TextBlock Text="• Fish" Margin="10" FontSize="16"/>
+                    <TextBlock Text="• Fish" Margin="10" FontSize="20"/>
 
-                    <TextBlock FontWeight="Bold" Foreground="DeepPink" Margin="10">
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink" Margin="10" FontSize="17">
                         <TextBlock.Inlines>
                             <Run Text="  "/>
                             <Run Text="Amok Paste (Kroeung):" TextDecorations="Underline"/>
                         </TextBlock.Inlines>
                     </TextBlock>
 
-                    <TextBlock Text="• 1 stalk of lemongrass (white part only, finely chopped)"/>
-                    <TextBlock Text="• 2-3 kaffir lime leaves (finely chopped)"/>
-                    <TextBlock Text="• 2 cloves of garlic (minced)"/>
-                    <TextBlock Text="• 1-2 shallots (minced)"/>
-                    <TextBlock Text="• 1 thumb-sized piece of galangal (peeled and chopped)"/>
-                    <TextBlock Text="• 2-3 dried red chilies (soaked in water, then chopped)"/>
-                    <TextBlock Text="• 1 teaspoon of turmeric powder or fresh turmeric (chopped)"/>
+                    <TextBlock Text="• 1 stalk of lemongrass (white part only, finely chopped)" FontSize="15"/>
+                    <TextBlock Text="• 2-3 kaffir lime leaves (finely chopped)" FontSize="15"/>
+                    <TextBlock Text="• 2 cloves of garlic (minced)" FontSize="15"/>
+                    <TextBlock Text="• 1-2 shallots (minced)" FontSize="15"/>
+                    <TextBlock Text="• 1 thumb-sized piece of galangal (peeled and chopped)" FontSize="15"/>
+                    <TextBlock Text="• 2-3 dried red chilies (soaked in water, then chopped)" FontSize="15"/>
+                    <TextBlock Text="• 1 teaspoon of turmeric powder or fresh turmeric (chopped)" FontSize="15"/>
 
                     <TextBlock FontWeight="Bold" Foreground="DeepPink" FontSize="17" Margin="10">
                         <TextBlock.Inlines>
@@ -77,42 +77,42 @@
                         </TextBlock.Inlines>
                     </TextBlock>
 
-                    <TextBlock Text="• 1 cup of coconut milk"/>
-                    <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                    <TextBlock Text="• 1 cup of coconut milk" FontSize="15"/>
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink" FontSize="15">
                         <TextBlock.Inlines>
                             <Run Text="  "/>
-                            <Run Text="Eggs:" TextDecorations="Underline"/>
+                            <Run Text="Eggs:" TextDecorations="Underline" FontSize="15"/> 
                         </TextBlock.Inlines>
                     </TextBlock>
-                    <TextBlock Text="• 2 eggs (lightly beaten)"/>
+                    <TextBlock Text="• 2 eggs (lightly beaten)" FontSize="15"/>
 
-                    <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink" FontSize="15">
                         <TextBlock.Inlines>
                             <Run Text="  "/>
                             <Run Text="Vegetables and Herbs:" TextDecorations="Underline"/>
                         </TextBlock.Inlines>
                     </TextBlock>
-                    <TextBlock Text="• 1 cup of spinach or noni leaves (optional, for layering)"/>
-                    <TextBlock Text="• 2-3 kaffir lime leaves (sliced thinly for garnish)"/>
-                    <TextBlock Text="• Fresh basil leaves (for garnish)"/>
+                    <TextBlock Text="• 1 cup of spinach or noni leaves (optional, for layering)" FontSize="15"/>
+                    <TextBlock Text="• 2-3 kaffir lime leaves (sliced thinly for garnish)" FontSize="15"/>
+                    <TextBlock Text="• Fresh basil leaves (for garnish)" FontSize="15"/>
 
-                    <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink" FontSize="17">
                         <TextBlock.Inlines>
                             <Run Text="  "/>
                             <Run Text="Seasonings:" TextDecorations="Underline"/>
                         </TextBlock.Inlines>
                     </TextBlock>
-                    <TextBlock Text="• 1 tablespoon of fish sauce"/>
-                    <TextBlock Text="• 1 tablespoon of palm sugar or brown sugar"/>
+                    <TextBlock Text="• 1 tablespoon of fish sauce" FontSize="15"/>
+                    <TextBlock Text="• 1 tablespoon of palm sugar or brown sugar" FontSize="15"/>
                     <TextBlock Text="• 1 teaspoon of salt"/>
 
-                    <TextBlock FontWeight="Bold" Foreground="DeepPink">
+                    <TextBlock FontWeight="Bold" Foreground="DeepPink" FontSize="17">
                         <TextBlock.Inlines>
                             <Run Text="  "/>
                             <Run Text="Banana Leaves (Optional):" TextDecorations="Underline"/>
                         </TextBlock.Inlines>
                     </TextBlock>
-                    <TextBlock Text="• Banana leaves (for wrapping, or you can use ramekins or small bowls)"/>
+                    <TextBlock Text="• Banana leaves (for wrapping, or you can use ramekins or small bowls)" FontSize="15"/>
                 </StackPanel>
 
                 <!-- Preparation Method Section -->

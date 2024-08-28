@@ -656,148 +656,139 @@
                     
                     <ScrollViewer Grid.Row="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
                         <WrapPanel Margin="10">
-                            <Button Width="100" Height="140" Margin="0" Background="#F2FCE4" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="0" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/kare kare.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#FFFCEB" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="5" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/larb1.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#ECFFEC" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="0" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/Lechon1.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#FEEFEA" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="5" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/myanmar shrimp curry.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#FFF3EB" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="0" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/myanmar shrimp curry1.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#FFFCEB" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="5" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/nasi lemak1.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#F2FCE4" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="0" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/nasi rawon1.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#FEEFEA" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="5" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/noodle soup.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
 
-                            <Button Width="100" Height="140" Margin="5" Background="#F2FCE4" BorderThickness="0">
+                            <Button Width="100" Height="140" Margin="0" BorderThickness="0">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
-                                        <Border Background="{TemplateBinding Background}" 
-                                                 BorderBrush="{TemplateBinding BorderBrush}" 
-                                                 BorderThickness="{TemplateBinding BorderThickness}" 
-                                                 CornerRadius="10">
+                                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                                CornerRadius="10">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="/Image/FoodImage/roti canai.jpg"/>
+                                            </Border.Background>
                                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <StackPanel>
-                                    <Image Source="/Image/Home/fresh-red.png" Width="100" Height="100"/>
-                                </StackPanel>
                             </Button>
                             <!-- Repeat buttons for other categories -->
                         </WrapPanel>
@@ -930,7 +921,7 @@
                                             </Grid.RowDefinitions>
 
                                             <!-- Recipe Image -->
-                                            <Image Source="/Image/Recipe/mju kroung.jpg" Grid.Row="0"
+                                            <Image Source="/Image/FoodImage/samosa thoke.jpg" Grid.Row="0"
                                                    Stretch="UniformToFill" 
                                                    Margin="5" 
                                                    ClipToBounds="True"
@@ -940,7 +931,7 @@
                                             <!-- Recipe Info -->
                                             <StackPanel Grid.Row="1" Margin="10">
                                                 <!-- Title -->
-                                                <TextBlock Text="Mju Kroung"
+                                                <TextBlock Text="Samosa thoke"
                                                            FontSize="14" FontWeight="Bold" 
                                                            TextWrapping="Wrap" Margin="0,5,0,5"/>
 
@@ -978,7 +969,7 @@
                                             </Grid.RowDefinitions>
 
                                             <!-- Recipe Image -->
-                                            <Image Source="/Image/Recipe/mju kroung.jpg" Grid.Row="0"
+                                            <Image Source="/Image/FoodImage/sop buntut.jpg" Grid.Row="0"
                                                    Stretch="UniformToFill" 
                                                    Margin="5" 
                                                    ClipToBounds="True"
@@ -988,7 +979,7 @@
                                             <!-- Recipe Info -->
                                             <StackPanel Grid.Row="1" Margin="10">
                                                 <!-- Title -->
-                                                <TextBlock Text="Mju Kroung"
+                                                <TextBlock Text="Sop Buntut"
                                                            FontSize="14" FontWeight="Bold" 
                                                            TextWrapping="Wrap" Margin="0,5,0,5"/>
 
@@ -1026,7 +1017,7 @@
                                             </Grid.RowDefinitions>
 
                                             <!-- Recipe Image -->
-                                            <Image Source="/Image/Recipe/mju kroung.jpg" Grid.Row="0"
+                                            <Image Source="/Image/FoodImage/Tandoori-Chicken1.jpg" Grid.Row="0"
                                                    Stretch="UniformToFill" 
                                                    Margin="5" 
                                                    ClipToBounds="True"
@@ -1036,7 +1027,7 @@
                                             <!-- Recipe Info -->
                                             <StackPanel Grid.Row="1" Margin="10">
                                                 <!-- Title -->
-                                                <TextBlock Text="Mju Kroung"
+                                                <TextBlock Text="Tandoori-Chicken"
                                                            FontSize="14" FontWeight="Bold" 
                                                            TextWrapping="Wrap" Margin="0,5,0,5"/>
 
@@ -1074,7 +1065,7 @@
                                             </Grid.RowDefinitions>
 
                                             <!-- Recipe Image -->
-                                            <Image Source="/Image/Recipe/samlorkorkor.jpg" Grid.Row="0"
+                                            <Image Source="/Image/FoodImage/tom-yum-goong.jpg" Grid.Row="0"
                                                    Stretch="UniformToFill" 
                                                    Margin="5" 
                                                    ClipToBounds="True"
@@ -1084,7 +1075,7 @@
                                             <!-- Recipe Info -->
                                             <StackPanel Grid.Row="1" Margin="10">
                                                 <!-- Title -->
-                                                <TextBlock Text="Samlor Kako"
+                                                <TextBlock Text="Tom yum goong"
                                                            FontSize="14" FontWeight="Bold" 
                                                            TextWrapping="Wrap" Margin="0,5,0,5"/>
 
@@ -1122,7 +1113,7 @@
                                             </Grid.RowDefinitions>
 
                                             <!-- Recipe Image -->
-                                            <Image Source="/Image/Recipe/samlorkorkor.jpg" Grid.Row="0"
+                                            <Image Source="/Image/FoodImage/Tondoori chicken.jpg" Grid.Row="0"
                                                    Stretch="UniformToFill" 
                                                    Margin="5" 
                                                    ClipToBounds="True"
@@ -1132,56 +1123,7 @@
                                             <!-- Recipe Info -->
                                             <StackPanel Grid.Row="1" Margin="10">
                                                 <!-- Title -->
-                                                <TextBlock Text="Samlor Kako"
-                                                           FontSize="14" FontWeight="Bold" 
-                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
-
-                                                <!-- Time and Type Info -->
-                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                                    <!-- Time Icon and Text -->
-                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
-                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
-                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
-                                                    </StackPanel>
-
-                                                    <!-- Meal Type Icon and Text -->
-                                                    <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
-                                                        <TextBlock Text="Snack" FontSize="12"/>
-                                                    </StackPanel>
-                                                </StackPanel>
-                                            </StackPanel>
-                                        </Grid>
-                                    </Border>
-                                </ControlTemplate>
-                            </Button.Template>
-                        </Button>
-
-
-                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
-                            <Button.Template>
-                                <ControlTemplate TargetType="Button">
-                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
-                                        <Grid>
-                                            <Grid.RowDefinitions>
-                                                <!-- Image Section -->
-                                                <RowDefinition Height="*"/>
-                                                <!-- Info Section -->
-                                                <RowDefinition Height="Auto"/>
-                                            </Grid.RowDefinitions>
-
-                                            <!-- Recipe Image -->
-                                            <Image Source="/Image/Recipe/samlorkorkor.jpg" Grid.Row="0"
-                                                   Stretch="UniformToFill" 
-                                                   Margin="5" 
-                                                   ClipToBounds="True"
-                                                   Width="187" 
-                                                   Height="150"/>
-
-                                            <!-- Recipe Info -->
-                                            <StackPanel Grid.Row="1" Margin="10">
-                                                <!-- Title -->
-                                                <TextBlock Text="Samlor Kako"
+                                                <TextBlock Text="Tondoori chicken"
                                                            FontSize="14" FontWeight="Bold" 
                                                            TextWrapping="Wrap" Margin="0,5,0,5"/>
 
@@ -1220,7 +1162,7 @@
                                             </Grid.RowDefinitions>
 
                                             <!-- Recipe Image -->
-                                            <Image Source="/Image/Recipe/samlorkorkor.jpg" Grid.Row="0"
+                                            <Image Source="/Image/FoodImage/yellow-curry.jpg" Grid.Row="0"
                                                    Stretch="UniformToFill" 
                                                    Margin="5" 
                                                    ClipToBounds="True"
@@ -1230,7 +1172,56 @@
                                             <!-- Recipe Info -->
                                             <StackPanel Grid.Row="1" Margin="10">
                                                 <!-- Title -->
-                                                <TextBlock Text="Samlor Kako"
+                                                <TextBlock Text="Yellow curry"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/crispy-rice-salad1.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Crispy rice salad1"
                                                            FontSize="14" FontWeight="Bold" 
                                                            TextWrapping="Wrap" Margin="0,5,0,5"/>
 

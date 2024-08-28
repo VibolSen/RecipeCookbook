@@ -195,50 +195,136 @@
 
         <!-- Analytics Section -->
         <StackPanel Grid.Column="2" Background="#F5F7F8">
-            
+
             <Button Width="40" Height="40" Margin="10" Background="Transparent" BorderBrush="Transparent" Click="CloseButton_Click" HorizontalAlignment="Right">
                 <Image Source="/Image/DashboardWindow/Close.png" Width="30" Height="30"/>
             </Button>
 
+            <Button Width="250" Height="50" Margin="0" Click="OpenFileButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="2" Background="Transparent">
+                            <Grid>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <!-- Logo -->
+                                    <Image Source="/Image/DashboardWindow/word.png" Width="30" Height="30" Margin="25,0,10,0" RenderTransformOrigin="0.5,0.5">
+                                        <Image.RenderTransform>
+                                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        </Image.RenderTransform>
+                                    </Image>
 
-            <Button Width="150"
-                    Height="50"
-                    Padding="10"
-                    Margin="5"
-                    Background="#4A4E69"
-                    Foreground="White"
-                    FontSize="16"
-                    FontWeight="Bold"
-                    Click="OpenFileButton_Click"
-                    BorderBrush="{x:Null}">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <!-- Icon -->
-                    <Image Source="/Image/DashboardWindow/Home.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                    <!-- Text -->
+                                    <TextBlock Text="Word" FontSize="20" FontWeight="Bold" Foreground="#0000FF" VerticalAlignment="Center" Width="102"/>
+                                </StackPanel>
 
-                    <!-- Text -->
-                    <TextBlock Text="Word" VerticalAlignment="Center" />
-                </StackPanel>
+                                <!-- Background fill when mouse down -->
+                                <Border x:Name="BackgroundBorder" Background="#0000FF" Opacity="0" CornerRadius="10"/>
+                            </Grid>
+                        </Border>
+
+                        <!-- Trigger for MouseDown -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BackgroundBorder" Property="Opacity" Value="0.1"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
             </Button>
 
+            <Button Width="250" Height="50" Margin="0" Click="OpenTextFileButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="2" Background="Transparent">
+                            <Grid>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <!-- Logo -->
+                                    <Image Source="/Image/DashboardWindow/txt.png" Width="30" Height="30" Margin="25,0,10,0" RenderTransformOrigin="0.5,0.5">
+                                        <Image.RenderTransform>
+                                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        </Image.RenderTransform>
+                                    </Image>
 
-            <Button Background="#4A4E69" 
-                    Padding="10" 
-                    Margin="5" 
-                    Width="150"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="16"
-                    FontWeight="Bold"
-                    Content="Open Text File"
-                    Click="OpenTextFileButton_Click"
-                    BorderBrush="{x:Null}"/>
+                                    <!-- Text -->
+                                    <TextBlock Text="Text" FontSize="20" FontWeight="Bold" Foreground="#0000FF" VerticalAlignment="Center" Width="102"/>
+                                </StackPanel>
 
-            <Button Content="Save" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Name="dropdownButton" Click="DropdownButton_Click">
+                                <!-- Background fill when mouse down -->
+                                <Border x:Name="BackgroundBorder" Background="#0000FF" Opacity="0" CornerRadius="10"/>
+                            </Grid>
+                        </Border>
+
+                        <!-- Trigger for MouseDown -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BackgroundBorder" Property="Opacity" Value="0.1"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button x:Name="dropdownButton" Width="250" Height="50" Margin="0" Click="DropdownButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="2" Background="Transparent">
+                            <Grid>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <!-- Logo -->
+                                    <Image Source="/Image/DashboardWindow/txt.png" Width="30" Height="30" Margin="25,0,10,0" RenderTransformOrigin="0.5,0.5">
+                                        <Image.RenderTransform>
+                                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        </Image.RenderTransform>
+                                    </Image>
+
+                                    <!-- Text -->
+                                    <TextBlock Text="Save" FontSize="20" FontWeight="Bold" Foreground="#0000FF" VerticalAlignment="Center" Width="102"/>
+                                </StackPanel>
+
+                                <!-- Background fill when mouse down -->
+                                <Border x:Name="BackgroundBorder" Background="#0000FF" Opacity="0" CornerRadius="10"/>
+                            </Grid>
+                        </Border>
+
+                        <!-- Trigger for MouseDown -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BackgroundBorder" Property="Opacity" Value="0.1"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <!-- Hover effect -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="BackgroundBorder" Property="Opacity" Value="0.2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+
+                <!-- ContextMenu -->
                 <Button.ContextMenu>
                     <ContextMenu Name="contextMenu">
-                        <MenuItem Header="Save as Text File" Click="SaveAsTextFile_Click" />
-                        <MenuItem Header="Save as Word File" Click="SaveAsWordFile_Click" />
-                        <MenuItem Header="Save as Excel File" Click="SaveAsExcelFile_Click" />
+                        <!-- Save as Text File -->
+                        <MenuItem Header="Save as Text File" Click="SaveAsTextFile_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Image/DashboardWindow/txt.png" Width="16" Height="16"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <!-- Save as Word File -->
+                        <MenuItem Header="Save as Word File" Click="SaveAsWordFile_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Image/DashboardWindow/word.png" Width="16" Height="16"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <!-- Save as Excel File -->
+                        <MenuItem Header="Save as Excel File" Click="SaveAsExcelFile_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Image/DashboardWindow/excel.png" Width="16" Height="16"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
                     </ContextMenu>
                 </Button.ContextMenu>
             </Button>

@@ -174,7 +174,6 @@
                             </Button.Template>
                             <StackPanel>
                                 <Image Source="/Image/Home/bunch-broccoli.png" Width="100" Height="100"/>
-                                <TextBlock Text="Cake Milk" HorizontalAlignment="Center"/>
                             </StackPanel>
                         </Button>
                         <!-- Repeat buttons for other categories -->
@@ -319,190 +318,292 @@
                         </Button>
 
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/adobo.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Adobo"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/Char-Kway-Teow-Malaysia.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Char-Kway-Teow-Malaysia"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/chilli-crab1.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="chilli-crab1"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/crispy-rice-salad1.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="crispy-rice-salad1"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/Feijoada Timorense.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Feijoada Timorense"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/fish head curry.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Samlor Kako"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
                         <!-- Repeat Border for other products -->
@@ -528,252 +629,388 @@
                             </Border.Background>
                         </Border>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/goi-cuon.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Goi Cuon"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/green-papaya-salad1.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="green-papaya-salad1"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/Hainanese-Chicken-Rice1.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Hainanese-Chicken-Rice1"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/Halo-Halo.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Halo-Halo"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/Hokkein-Mee.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Hokkein-Mee"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/ikan-pepes.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="ikan-pepes"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/Indonesian_Satay.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="Indonesian_Satay"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
-                        <Button Width="197" Height="250" Margin="5" Background="Beige" BorderBrush="Transparent" BorderThickness="1" Padding="0">
+                        <Button Width="197" Height="250" Margin="5" Background="Transparent" BorderThickness="0" Padding="0" Click="Somlorkorkor_Click">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
-                                    <Border Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Border Background="White" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <!-- Image Section -->
+                                                <RowDefinition Height="*"/>
+                                                <!-- Info Section -->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Recipe Image -->
+                                            <Image Source="/Image/FoodImage/kare kare.jpg" Grid.Row="0"
+                                                   Stretch="UniformToFill" 
+                                                   Margin="5" 
+                                                   ClipToBounds="True"
+                                                   Width="187" 
+                                                   Height="150"/>
+
+                                            <!-- Recipe Info -->
+                                            <StackPanel Grid.Row="1" Margin="10">
+                                                <!-- Title -->
+                                                <TextBlock Text="kare kare"
+                                                           FontSize="14" FontWeight="Bold" 
+                                                           TextWrapping="Wrap" Margin="0,5,0,5"/>
+
+                                                <!-- Time and Type Info -->
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                                    <!-- Time Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                                                        <TextBlock Text="⏱" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="30 Minutes" FontSize="12"/>
+                                                    </StackPanel>
+
+                                                    <!-- Meal Type Icon and Text -->
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="🍽️" FontSize="14" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="Snack" FontSize="12"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Grid>
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Beige"/>
-                                    <Setter Property="BorderBrush" Value="Transparent"/>
-                                    <Setter Property="BorderThickness" Value="1"/>
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#D3B48A"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <StackPanel>
-                                <Image Source="/Image/Home/kuyteav.png" Width="100" Height="100"/>
-                                <TextBlock Text="Product Name" FontSize="16" FontWeight="Bold" Margin="5"/>
-                                <TextBlock Text="$23.85" FontSize="14" Margin="5"/>
-                            </StackPanel>
                         </Button>
 
                         <Border CornerRadius="10" Margin="10" Width="810" Height="300" HorizontalAlignment="Center">
